@@ -33,9 +33,9 @@ This is a dashboard template built with React and Vite. It provides a modern and
 
 To get started with this project, follow these steps:
 
-1. Clone the repository:
+1. Install the package:
     ```bash
-    npm i create-nova-vite
+    npx create-nova-vite-template
     ```
 2. Navigate to the project directory:
     ```bash
