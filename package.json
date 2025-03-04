@@ -24,10 +24,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MahmoudSalah619/Dashboard-Template.git"
+    "url": "git+https://github.com/MahmoudSalah619/nova-vite-template"
+  },
+  "bugs": {
   },
   "license": "MIT",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "scripts": {
     "start": "vite  --port 3000",
     "start_staging": "vite --port 9130",

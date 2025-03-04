@@ -1,6 +1,7 @@
 # Dashboard Vite Template
 
 This is a dashboard template built with React and Vite. It provides a modern and responsive user interface for building web applications. It includes:
+
 - Forms with all shapes
 - Sider
 - Navbar
@@ -33,32 +34,35 @@ This is a dashboard template built with React and Vite. It provides a modern and
 
 To get started with this project, follow these steps:
 
-1. Install the package:
-    ```bash
-    npx create-nova-vite-template
-    ```
+1. Install the Template:
+   ```bash
+   npx create-nova-vite-template
+   ```
 2. Navigate to the project directory:
-    ```bash
-    cd dashboard-template
-    ```
+   ```bash
+   cd <project-name>
+   ```
 3. Install the dependencies:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ## Usage
 
 To start the development server, run:
+
 ```bash
 npm run dev
 ```
 
 To build the project for production, run:
+
 ```bash
 npm run build
 ```
 
 To preview the production build, run:
+
 ```bash
 npm run
 ```
