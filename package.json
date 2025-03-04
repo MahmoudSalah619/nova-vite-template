@@ -27,7 +27,7 @@
     "url": "git+https://github.com/MahmoudSalah619/Dashboard-Template.git"
   },
   "license": "MIT",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "scripts": {
     "start": "vite  --port 3000",
     "start_staging": "vite --port 9130",
