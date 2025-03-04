@@ -1,0 +1,11 @@
+@use "/styles/all" as *;
+
+.link {
+  &:hover {
+    color: $primary;
+  }
+}
+
+.customText {
+  display: inline-flex;
+}

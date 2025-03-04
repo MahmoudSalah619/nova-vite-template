@@ -1,0 +1,8 @@
+@use "/styles/all" as *;
+
+.productNameCell {
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

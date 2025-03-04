@@ -1,0 +1,110 @@
+@use "/styles/all" as *;
+
+.inputWithIconContainer {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-color: $LightGray;
+  border-radius: 10px;
+
+  :global {
+    .ant-select-selection-item {
+      line-height: 1 !important;
+      word-break: break-word !important;
+      white-space: pre-line !important;
+    }
+  }
+}
+
+.prefixIcon {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+}
+
+.withPrefix :global {
+  .ant-select-selection-search,
+  .ant-select-selection-item {
+    padding-inline-start: 28px !important;
+  }
+  .selectInput {
+    & input {
+      padding-inline-start: 25px !important;
+    }
+  }
+}
+.selectInput :global {
+  height: 56px !important;
+
+  & input {
+    height: 56px !important;
+  }
+
+  .ant-select-dropdown {
+    padding: 8px 0;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.16);
+  }
+
+  .ant-select-selector {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    min-width: 158px;
+    padding: 15px 19px !important;
+
+    background-color: $LightGray !important;
+    border-radius: 10px !important;
+
+    &:hover,
+    &:focus,
+    &:not(:hover) {
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      border: none !important;
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    padding-inline-start: 20px !important;
+    padding-inline-end: 0 !important;
+    color: $LightGray !important;
+  }
+
+  .ant-select-arrow {
+    inset-inline-end: 20px !important;
+    width: 24px;
+    height: 24px;
+  }
+  .ant-select-item {
+    height: 40px !important;
+    padding: 8px 16px !important;
+    border-radius: 0;
+  }
+  .ant-select-selection-placeholder {
+    color: $LightGray;
+  }
+  .ant-select-item-option-content {
+    color: $darkGray;
+  }
+  .ant-select-item-option-active {
+    background-color: $LightGray !important;
+  }
+  .ant-select-focused {
+    box-shadow: 0 !important;
+  }
+}
+
+.loadingSpinner {
+  margin-block-start: -5px;
+  margin-inline-start: -5px;
+}

@@ -1,0 +1,13 @@
+@use "/styles/all" as *;
+
+.homeContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbarLink {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

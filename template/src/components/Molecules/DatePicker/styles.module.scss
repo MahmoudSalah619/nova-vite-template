@@ -1,0 +1,33 @@
+@use "/styles/all" as *;
+
+.customFooterContent {
+  display: flex;
+  gap: 12px;
+  height: 44px;
+  margin-block: 20px;
+
+  .rangeInput {
+    width: 136px;
+    font-family: "GothamMedium";
+    border-radius: 10px !important;
+  }
+}
+
+.rangePicker {
+  position: absolute;
+  width: 0;
+  visibility: hidden;
+}
+
+.closePopUp {
+  all: unset;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}

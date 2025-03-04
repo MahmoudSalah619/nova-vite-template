@@ -1,0 +1,31 @@
+@use "/styles/all" as *;
+
+.inputsHolder {
+  display: flex;
+  flex: 1;
+  gap: 24px;
+  align-items: center;
+
+  width: 100%;
+
+  .selectionContainer {
+    width: 100%;
+  }
+
+  .or {
+    margin-top: 18px;
+  }
+}
+
+.dateSelectionContainer {
+  display: flex;
+  flex: 1;
+  gap: 24px;
+  align-items: flex-end;
+
+  width: 100%;
+
+  .selectionContainer {
+    width: 100%;
+  }
+}

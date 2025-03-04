@@ -1,0 +1,53 @@
+{
+  "name": "nova-vite-template",
+  "description": "This is a dashboard template built with React and Vite. It provides a modern and responsive user interface for building web applications.",
+  "author": "mahmoud salah <mahmoud.s.m619@gmail.com>",
+  "keywords": [
+    "react",
+    "template",
+    "vite",
+    "dashboard",
+    "admin",
+    "admin-dashboard",
+    "admin-template",
+    "react-admin",
+    "react-dashboard",
+    "react-template",
+    "vite-template"
+  ],
+  "bin": {
+    "create-nova-vite": "./bin/cli.cmd"
+  },
+  "files": [
+    "bin",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahmoudSalah619/Dashboard-Template.git"
+  },
+  "license": "MIT",
+  "version": "1.2.1",
+  "type": "module",
+  "scripts": {
+    "start": "vite  --port 3000",
+    "start_staging": "vite --port 9130",
+    "dev": "vite --port 3000",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "check-types": "tsc --pretty --noEmit",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "check-format": "prettier --check .",
+    "format": "prettier --write .",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build",
+    "fix-lint": "node ./node_modules/eslint/bin/eslint.js --fix ./**/*.{ts,tsx}",
+    "fix-style": "node ./node_modules/stylelint/bin/stylelint.mjs --fix ./**/*.{module.scss,scss}"
+  },
+  "dependencies": {
+    "commander": "13.1.0",
+    "ejs": "3.1.10",
+    "fs-extra": "11.3.0"
+  }
+ 
+}

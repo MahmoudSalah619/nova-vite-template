@@ -1,0 +1,16 @@
+@use "/styles/all" as *;
+
+.inputContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  .deleteIcon {
+    cursor: pointer;
+    margin-top: 24px;
+  }
+
+  .input {
+    border: 1px solid $grey200;
+  }
+}

@@ -1,0 +1,36 @@
+@use "/styles/all" as *;
+
+.navbarLink {
+  cursor: pointer;
+
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  padding: 8px 12px;
+
+  border-radius: 6px;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    color: unset;
+    background-color: $background;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+  }
+
+  &.active {
+    color: $grey50;
+    background-color: $orange500;
+
+    .icon {
+      color: $grey50;
+    }
+  }
+}

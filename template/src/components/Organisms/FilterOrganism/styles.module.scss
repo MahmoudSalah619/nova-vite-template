@@ -1,0 +1,31 @@
+@use "/styles/all" as *;
+
+.filterContainer {
+  cursor: pointer;
+
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 16px;
+
+  border: 1px solid $grey200;
+  border-radius: 8px;
+}
+
+.drawer {
+  :global {
+    .ant-drawer-header-title {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .ant-drawer-close {
+      font-size: 12px;
+      color: $grey900;
+      background-color: $grey200;
+      border-radius: 50px;
+    }
+  }
+}

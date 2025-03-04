@@ -1,0 +1,40 @@
+@use "/styles/all" as *;
+
+.container {
+  padding-bottom: 24px;
+  .introText {
+    margin-top: 32px;
+    margin-bottom: 20px;
+    margin-inline: auto;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $grey700;
+    text-align: center;
+  }
+  .formContainer {
+    width: 328px;
+    .emailInput {
+      border: 1px solid $grey200;
+    }
+
+    .passwordContainer {
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+    .btnContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .validationContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-block: 20px;
+    }
+  }
+}

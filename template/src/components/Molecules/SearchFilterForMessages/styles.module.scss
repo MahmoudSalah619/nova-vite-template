@@ -1,0 +1,17 @@
+@use "/styles/all" as *;
+
+.container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  .selectionContainerInput {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 60%;
+  }
+  .searchInput {
+    font-size: 20px !important;
+  }
+}

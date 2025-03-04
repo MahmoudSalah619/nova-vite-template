@@ -1,0 +1,22 @@
+@use "/styles/all" as *;
+
+.tableContainer {
+  padding-top: 32px;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+
+  .searchInput {
+    width: 450px;
+  }
+}

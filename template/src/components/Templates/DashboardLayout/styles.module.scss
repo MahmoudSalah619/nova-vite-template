@@ -1,0 +1,29 @@
+@use "/styles/all" as *;
+
+.siderStyle {
+  position: fixed;
+
+  height: 100vh;
+  padding: 32px 24px;
+
+  background-color: $light;
+  border-right: 1px solid $grey200;
+}
+
+.mainContainer {
+  margin-inline-start: 20%;
+  .headerStyle {
+    height: 88px;
+    padding: 0;
+    padding: 32px 24px;
+
+    line-height: unset;
+
+    background-color: $light;
+    border-bottom: 1px solid $grey200;
+  }
+
+  .contentStyle {
+    padding: 32px 24px;
+  }
+}

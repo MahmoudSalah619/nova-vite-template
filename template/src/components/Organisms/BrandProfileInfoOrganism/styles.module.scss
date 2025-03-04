@@ -1,0 +1,56 @@
+@use "/styles/all" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  .inputsHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .profileContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .input {
+      border: 1px solid $grey200;
+    }
+
+    .uploadDragger {
+      :global {
+        .ant-upload-drag {
+          width: fit-content;
+          padding: unset !important;
+          background-color: $transparent;
+          border: unset !important;
+        }
+        .ant-upload-btn {
+          padding: unset !important;
+        }
+      }
+    }
+    .center {
+      :global {
+        .ant-upload-drag {
+          width: fit-content;
+          padding: unset !important;
+          background-color: $transparent;
+          border: unset !important;
+        }
+        .ant-upload-btn {
+          padding: unset !important;
+        }
+      }
+    }
+  }
+}

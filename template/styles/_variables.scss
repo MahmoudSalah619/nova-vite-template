@@ -1,0 +1,71 @@
+$desktop-design-viewport: 1440px;
+$desktop-design-height: 1024px;
+$mobile-design-viewport: 375px;
+$navbar-height: 84px;
+$sidebar-width: 280px;
+
+/* Primary Colors */
+$primary: #ff8b66;
+$primaryFF: #ff7e55;
+$lightPrimary: #e9f1f6;
+$secondary: #7f7f7f;
+$accentYellow: #fec214;
+$grey: #dedde0;
+$orange500: #ff7e55;
+
+/* Neutral Colors */
+/* Grey */
+$grey50: #faf9f9;
+$grey100: #f0eeee;
+$grey200: #e1dedd;
+$grey300: #d2cdcb;
+$grey400: #c3bcba;
+$grey500: #9b908c;
+$grey600: #766b67;
+$grey700: #4f4745;
+$grey900: #141211;
+$darkGrey: #b9b8be;
+$greyBg: #f9f6ef99;
+$greyEF: #ef4444;
+$grey76: #7676801f;
+$LightGray: #f5f5f5;
+$success700: #067647;
+$success200: #abefc6;
+$success50: #ecfdf3;
+
+$gray700: #344054;
+$gray200: #eaecf0;
+$gray50: #f9fafb;
+
+$error700: #b42318;
+$error200: #fecdca;
+$error50: #fef3f2;
+
+/* Common */
+$dark: #262626;
+$black: #000000;
+$headlineDark: #072736;
+$light: #ffffff;
+$background: #f5f5f5;
+$secondaryText: #6c7278;
+$transparent: transparent;
+
+/* System Message Colors */
+$success: #159f91;
+$danger: #ff193b;
+
+/* Other Colors */
+$green500: #10b981;
+$green00: #00ce15;
+$red500: #ef4444;
+$RedCE: #ce0000;
+$blue0A: #0a06c6;
+$blue18: #1877f2;
+$blue00: #0008ce;
+$beigeFB: #fbeeb5;
+$yellowFE: #fed049;
+$yellow200: #fde68a;
+$yellow50: #fffbeb;
+$yellow700: #b45309;
+$ErrorRed400: #f87171;
+$WarningYellow600: #d97706;

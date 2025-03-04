@@ -1,0 +1,33 @@
+@use "/styles/all" as *;
+
+.editor {
+  height: 181px;
+  font-family: inherit;
+  border-radius: 4px;
+  border-radius: 80px;
+
+  :global {
+    .ql-toolbar {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .ql-container {
+      height: 133px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .ql-formats button:hover .ql-stroke {
+      stroke: $orange500;
+    }
+
+    .ql-formats .ql-picker-label:hover {
+      color: $orange500 !important;
+    }
+
+    .ql-formats .ql-picker-label:hover .ql-stroke {
+      stroke: $orange500 !important;
+    }
+  }
+}

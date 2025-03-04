@@ -1,0 +1,57 @@
+@use "/styles/all" as *;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .MainTitle {
+    font-family: unset !important;
+    font-weight: 500;
+  }
+  .contactUs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .SelectInputContent {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      span {
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .SelectInput {
+        width: 100%;
+      }
+    }
+    .SubmitInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      max-width: 210px;
+      .btn {
+        width: 228px;
+        padding-block: 11px;
+      }
+      p {
+        font-family: unset !important;
+        font-size: 15px !important;
+        font-weight: 500;
+        span {
+          font-weight: 100;
+        }
+      }
+    }
+    .textArea {
+      textarea {
+        padding: 12px;
+      }
+    }
+  }
+}

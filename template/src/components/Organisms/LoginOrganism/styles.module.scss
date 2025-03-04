@@ -1,0 +1,45 @@
+@use "/styles/all" as *;
+
+.container {
+  .introText {
+    margin-block: 32px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $grey700;
+    text-align: center;
+  }
+  .formContainer {
+    padding-inline: 116px;
+
+    .passwordContainer {
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+    .rowContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .signUpContainer {
+      margin-top: 12px;
+      .signUpText {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $grey600;
+        text-align: center;
+
+        .space {
+          margin-inline-start: 4px;
+        }
+      }
+    }
+    .btnContainer {
+      margin-top: 16px;
+    }
+  }
+}

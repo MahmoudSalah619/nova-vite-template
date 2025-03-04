@@ -1,0 +1,27 @@
+@use "/styles/all" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .titleCon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .btnCon {
+    display: flex;
+    gap: 15px;
+  }
+  .SubCategoriesContent {
+    .headerContaier {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    .categoriesList {
+      margin-bottom: 30px;
+    }
+  }
+}

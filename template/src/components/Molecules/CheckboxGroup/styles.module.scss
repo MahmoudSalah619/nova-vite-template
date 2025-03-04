@@ -1,0 +1,21 @@
+@use "/styles/all" as *;
+
+.container {
+  .searchInput {
+    margin-top: 12px;
+    border-radius: 4px !important;
+  }
+
+  .checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+
+  .checkbox {
+    align-items: center;
+  }
+}

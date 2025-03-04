@@ -1,0 +1,18 @@
+@use "/styles/all" as *;
+
+.NotFoundContent {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+
+  .boldText {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+}

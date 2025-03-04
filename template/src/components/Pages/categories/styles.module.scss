@@ -1,0 +1,24 @@
+@use "/styles/all" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .filterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .staticticsContainer {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

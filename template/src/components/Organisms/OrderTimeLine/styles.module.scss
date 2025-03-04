@@ -1,0 +1,60 @@
+@use "/styles/all" as *;
+
+.OrderTimelineContent {
+  .title {
+    margin-bottom: 18px;
+  }
+  .Timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 15px;
+      height: 15px;
+
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 14px;
+      left: 6px;
+
+      width: 3px;
+      height: 21px;
+    }
+    p {
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+    &:last-of-type {
+      &::after {
+        display: none;
+      }
+    }
+    &.Done {
+      &::before {
+        background-color: $primary;
+      }
+      &::after {
+        background-color: $primary;
+      }
+    }
+    &.pending {
+      &:before {
+        background-color: $grey400;
+      }
+      &:after {
+        background-color: $grey400;
+      }
+    }
+  }
+}

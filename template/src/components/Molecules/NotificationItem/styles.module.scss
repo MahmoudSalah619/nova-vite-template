@@ -1,0 +1,41 @@
+@use "/styles/all" as *;
+
+.notificationItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  .notificationDot {
+    width: 14px;
+    height: 14px;
+    margin-inline-end: 8px;
+
+    background-color: #ff5722;
+    border-radius: 14px;
+  }
+
+  .productInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+
+    .productImage {
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+  }
+
+  .notificationContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin-block: 12px;
+  background-color: $grey200;
+}

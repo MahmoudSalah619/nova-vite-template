@@ -1,0 +1,75 @@
+@use "/styles/all" as *;
+
+.container {
+  position: relative;
+  gap: 16px;
+  padding-bottom: 16px;
+  .filterBtn {
+    position: absolute;
+    top: 28px;
+    right: 23px;
+  }
+  .reviewContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .leftSide {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .singleReview {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+      .starsContainer {
+        display: flex;
+        gap: 3px;
+      }
+    }
+    .rightSide {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .progressContainer {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        .singleReview {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+        }
+        .progressParent {
+          width: 222px;
+          height: 8px;
+          background-color: $grey600;
+          border-radius: 4px;
+          .progressChild {
+            height: 100%;
+            background-color: #fbbf24;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .comments {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .commentContainer {
+      display: block;
+      padding: 16px;
+      border: 1px solid $grey300;
+      border-radius: 16px;
+      .starContainer {
+        display: flex;
+        gap: 3px;
+        margin-top: 8px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

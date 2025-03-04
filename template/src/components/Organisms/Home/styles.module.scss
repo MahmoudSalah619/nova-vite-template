@@ -1,0 +1,24 @@
+@use "/styles/all" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .chartContainer {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.productNameCell {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,45 @@
+@use "/styles/all" as *;
+
+.mainTable {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  margin-bottom: 20px;
+}
+.rowCustom {
+  cursor: pointer;
+}
+
+.paginationContainer {
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-inline: 24px;
+
+  :global {
+    .ant-pagination {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.headerCon {
+  display: flex;
+  justify-content: space-between;
+}
+.filterBtn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  padding: 8px;
+
+  font-family: "GothamMedium";
+  font-size: 14px;
+  color: $gray700;
+
+  border: 1px solid $darkGrey;
+  border-radius: 7px;
+}

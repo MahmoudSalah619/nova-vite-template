@@ -1,0 +1,22 @@
+@use "/styles/all" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+
+  .rangeInputContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rangeSeparator {
+    margin-inline-start: 8px;
+    margin-inline-end: 8px !important;
+
+    font-size: 28px;
+    font-weight: 400;
+    color: $grey500;
+  }
+}

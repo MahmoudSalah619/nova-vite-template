@@ -1,0 +1,53 @@
+@use "/styles/all" as *;
+
+.container {
+  .introText {
+    margin-top: 32px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $grey700;
+    text-align: center;
+  }
+  .formContainer {
+    text-align: center;
+
+    .btnContainer {
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .otpInput {
+      display: flex;
+      gap: 16px;
+      justify-content: center; // Space between boxes
+    }
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+:global(.ant-otp-input) {
+  width: 58px !important;
+  height: 58px !important;
+}
+
+:global(
+    :where(
+        .css-dev-only-do-not-override-1x0dypw
+      ).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled)
+  ) {
+  border-color: $red500 !important;
+}

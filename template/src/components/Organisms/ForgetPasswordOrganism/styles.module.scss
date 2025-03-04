@@ -1,0 +1,28 @@
+@use "/styles/all" as *;
+
+.container {
+  width: 59%;
+  .introText {
+    width: 78%;
+    margin-block: 32px;
+    margin-inline: auto;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $grey700;
+    text-align: center;
+  }
+  .formContainer {
+    width: 329px;
+    margin: auto;
+
+    .emailInput {
+      border: 1px solid $grey200;
+    }
+
+    .btnContainer {
+      margin-top: 16px;
+    }
+  }
+}

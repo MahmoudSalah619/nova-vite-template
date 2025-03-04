@@ -1,0 +1,48 @@
+@use "/styles/all" as *;
+
+.cardWrapperContainer {
+  gap: 16px;
+}
+
+.mainTitle {
+  padding-inline: 24px;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+
+  height: 76px;
+  padding-inline: 20px;
+
+  background-color: $grey50;
+
+  .productName {
+    width: 40%;
+  }
+}
+
+.tableBody {
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 14px;
+  padding-inline: 20px;
+
+  border-bottom: 1px solid $grey200;
+
+  .productInfo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 40%;
+
+    .inputContainer {
+      width: 90%;
+    }
+  }
+}
+
+.btnContainer {
+  padding-inline: 24px;
+}

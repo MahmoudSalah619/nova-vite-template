@@ -1,0 +1,24 @@
+@use "/styles/all" as *;
+
+.AddUsers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  .AddUsersBtns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .discardBtn {
+    p {
+      color: $ErrorRed400 !important;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

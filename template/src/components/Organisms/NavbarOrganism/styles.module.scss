@@ -1,0 +1,12 @@
+@use "/styles/all" as *;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarRight {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}

@@ -1,0 +1,18 @@
+@use "/styles/all" as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .childrenContainer {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .titleCon {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+}

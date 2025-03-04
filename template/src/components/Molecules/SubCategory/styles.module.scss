@@ -1,0 +1,15 @@
+@use "/styles/all" as *;
+.SubCategoryLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid $grey;
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+}

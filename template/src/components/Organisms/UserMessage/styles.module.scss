@@ -1,0 +1,12 @@
+@use "/styles/all" as *;
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.callBtn {
+  padding-block: 8px !important;
+  padding-inline: 16px !important;
+  border: 1px solid #ccc;
+}

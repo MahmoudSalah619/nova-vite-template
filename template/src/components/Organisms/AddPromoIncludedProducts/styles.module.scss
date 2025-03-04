@@ -1,0 +1,9 @@
+@use "/styles/all" as *;
+
+.radioGroup {
+  display: flex;
+  gap: 50px;
+}
+.radioBtns {
+  font-family: "GothamMedium";
+}

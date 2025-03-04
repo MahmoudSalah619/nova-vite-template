@@ -1,0 +1,50 @@
+@use "/styles/all" as *;
+
+.uploadDragger {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid $grey200;
+  border-radius: 8px;
+
+  :global {
+    .ant-upload-drag {
+      background-color: $light;
+      border: unset;
+    }
+  }
+
+  .customIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+    margin-inline: auto;
+    padding: 10px;
+
+    border: 1px solid $grey200;
+    border-radius: 8px;
+  }
+
+  .uploadText {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+  }
+
+  .fileList {
+    margin-top: 20px;
+
+    .ant-list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ant-list-item-actions {
+      margin-left: 8px;
+    }
+  }
+}

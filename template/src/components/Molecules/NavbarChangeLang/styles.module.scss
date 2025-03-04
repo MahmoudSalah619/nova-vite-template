@@ -1,0 +1,9 @@
+.langCon {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  .langBtn {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

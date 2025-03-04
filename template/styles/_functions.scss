@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+@function vw($px-vw, $design-viewport: $desktop-design-viewport) {
+  @return ($px-vw * 100vw) / $design-viewport;
+}
+
+@function vh($px-vw, $design-height: $desktop-design-height) {
+  @return ($px-vw * 100vh) / $design-height;
+}
+
+@function mobile-responsive($px-vw) {
+  @return min(#{vw($px-vw, $mobile-design-viewport)}, #{$px-vw});
+}
+
+@function desktop-responsive($px-vw) {
+  @return min(#{vw($px-vw, $desktop-design-viewport)}, #{$px-vw});
+}
+
+@function applyOpacity($hex, $opacity) {
+  $r: red($hex);
+  $g: green($hex);
+  $b: blue($hex);
+
+  @return rgba($r, $g, $b, $opacity);
+}

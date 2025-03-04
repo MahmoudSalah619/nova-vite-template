@@ -1,0 +1,42 @@
+@use "/styles/all" as *;
+
+.title {
+  width: 100%;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+
+  font-family: "GothamMedium";
+  font-size: 18px;
+
+  border-bottom: 1px solid $gray200;
+}
+.detailsCon {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .textCon {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .btnCon {
+      display: flex;
+      gap: 16px;
+      .editBtn {
+        color: $gray200;
+        background-color: $background !important;
+        border: 1px solid $gray200;
+      }
+    }
+  }
+  .selectionContainerInput {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 10%;
+  }
+}

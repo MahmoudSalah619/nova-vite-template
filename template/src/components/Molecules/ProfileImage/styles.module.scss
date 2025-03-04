@@ -1,0 +1,17 @@
+@use "/styles/all" as *;
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 83px;
+  height: 83px;
+
+  border-radius: 50%;
+  .img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
+  }
+}

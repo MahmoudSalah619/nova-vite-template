@@ -1,0 +1,68 @@
+@use "/styles/all" as *;
+
+.pagination {
+  :global {
+    .ant-pagination-options {
+      display: none;
+    }
+
+    .ant-pagination-next {
+      margin-inline-start: auto;
+    }
+
+    .ant-pagination-prev {
+      margin-inline-end: auto;
+    }
+
+    .ant-pagination-next,
+    .ant-pagination-prev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 8px 14px;
+
+      border: 1px solid $grey200;
+      border-radius: 8px;
+    }
+
+    .ant-pagination-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 40px;
+      height: 40px;
+    }
+
+    .ant-pagination-item-active {
+      background-color: $orange500;
+      border: unset;
+
+      a {
+        color: $grey50 !important;
+      }
+
+      :hover {
+        border-color: unset;
+      }
+    }
+
+    .ant-pagination-jump-next,
+    .ant-pagination-jump-prev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.btnPrev,
+.btnNext {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}

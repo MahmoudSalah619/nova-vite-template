@@ -1,0 +1,22 @@
+@use "/styles/all" as *;
+
+.container {
+  width: 328px;
+  margin: auto;
+  p {
+    text-align: center;
+  }
+  .imgContainer {
+    margin-top: 32px;
+    text-align: center;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

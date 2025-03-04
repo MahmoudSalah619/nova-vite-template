@@ -1,0 +1,43 @@
+@use "/styles/all" as *;
+
+:global {
+  .ant-btn {
+    border-radius: 0px;
+    &:hover {
+      color: $orange500 !important;
+    }
+  }
+}
+
+.activeFilterButton {
+  color: $light !important;
+  background-color: $orange500 !important;
+  border-color: $orange500 !important;
+
+  &:hover {
+    color: $light !important;
+  }
+}
+.btnCon {
+  font-family: "GothamMedium";
+}
+
+.grayButtons {
+  color: $grey700 !important;
+  background-color: $grey50 !important;
+  border-color: $grey200 !important;
+
+  &:hover {
+    color: $grey700 !important;
+  }
+}
+
+.firstFilterButton {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.lastFilterButton {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}

@@ -1,0 +1,96 @@
+@use "/styles/all" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  .label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $grey900;
+  }
+  .inputContent {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    border: 1px solid $grey200;
+    border-radius: 10px;
+    .prefixIcon {
+      position: absolute;
+      z-index: 100;
+      top: 50%;
+      left: 25px;
+      transform: translate(-50%, -50%);
+    }
+
+    input {
+      height: 44px;
+    }
+
+    > input,
+    textarea {
+      resize: none;
+
+      width: 100%;
+      padding-inline: 19px;
+
+      color: $dark;
+
+      border: none !important;
+      border-radius: inherit;
+      outline: none;
+    }
+  }
+
+  .withPrefix {
+    > input,
+    textarea {
+      padding-inline-start: 38px !important;
+      font-size: 16px;
+    }
+  }
+
+  .disabled {
+    background-color: $LightGray;
+    textarea,
+    input {
+      color: $LightGray;
+    }
+    &:hover {
+      cursor: not-allowed;
+      * {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+.errorMsg {
+  margin-top: 12px;
+  margin-bottom: 16px;
+  p {
+    line-height: 1;
+  }
+}
+
+.error {
+  border: 1px solid $red500 !important;
+}

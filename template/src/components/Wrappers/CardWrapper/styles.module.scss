@@ -1,0 +1,17 @@
+@use "/styles/all" as *;
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  padding: 32px 24px;
+
+  background-color: $light;
+  border: 1px solid $grey200;
+  border-radius: 12px;
+}
+
+.noPadding {
+  padding: 32px 0;
+}

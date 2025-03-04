@@ -1,0 +1,47 @@
+@use "/styles/all" as *;
+
+.container {
+  .divider {
+    margin: 0;
+    padding-bottom: 24px;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+  }
+  .inputss {
+    border-radius: 8px !important;
+  }
+  .tagContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .paidCircle {
+    width: 6px;
+    height: 6px;
+    background-color: $success700;
+    border-radius: 50%;
+  }
+  .cancelledCircle {
+    width: 6px;
+    height: 6px;
+    background-color: $danger;
+    border-radius: 50%;
+  }
+  .inProgressCircle {
+    width: 6px;
+    height: 6px;
+    background-color: $accentYellow;
+    border-radius: 50%;
+  }
+  .refunded {
+    width: 6px;
+    height: 6px;
+    background-color: $grey500;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,65 @@
+@use "/styles/all" as *;
+
+.statusIndicator {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  width: fit-content;
+  padding: 2px 8px;
+
+  border-radius: 999px;
+}
+
+.published {
+  background-color: $success50;
+  border: 1px solid $success200;
+
+  p {
+    color: $success700 !important;
+  }
+}
+
+.inReview {
+  color: #ff9800 !important;
+}
+
+.awaitApp {
+  background-color: $yellow50;
+  border: 1px solid $yellow700;
+
+  p {
+    color: $yellow700 !important;
+  }
+}
+
+.rejected {
+  background-color: $error50;
+  border: 1px solid $error200;
+
+  p {
+    color: $error700 !important;
+  }
+}
+
+.inDraft {
+  color: #9e9e9e !important;
+}
+
+.inactive {
+  background-color: $gray50;
+  border: 1px solid $gray200;
+
+  p {
+    color: $gray700 !important;
+  }
+}
+
+.closed {
+  background-color: $gray200;
+  border: 1px solid $grey300;
+
+  p {
+    color: $grey700 !important;
+  }
+}

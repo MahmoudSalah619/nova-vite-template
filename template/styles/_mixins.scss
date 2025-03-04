@@ -1,0 +1,25 @@
+@use "variables" as *;
+@use "functions" as *;
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin font($size, $weight) {
+  font-size: $size !important;
+  font-weight: $weight !important;
+}

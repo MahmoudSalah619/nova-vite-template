@@ -1,0 +1,21 @@
+@use "/styles/all" as *;
+
+.cardLine {
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin: 2px 0;
+    padding: 3px 5px;
+  }
+}
+
+.marked {
+  color: $light !important;
+  background-color: #d97706;
+  border-radius: 5px;
+}
+.title {
+  cursor: pointer;
+  color: $orange500 !important;
+  text-decoration: underline;
+}

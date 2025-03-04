@@ -1,0 +1,18 @@
+@use "/styles/all" as *;
+
+.OrderInfo {
+  margin-top: 15px;
+  .OrderInfo_title {
+    margin-bottom: 10px;
+  }
+  .orderInfo_line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+  }
+  .columGap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}

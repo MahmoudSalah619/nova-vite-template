@@ -1,0 +1,32 @@
+@use "/styles/all" as *;
+.ProductCardContent {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-between;
+
+  padding: 26px 20px 26px 0px;
+
+  border-bottom: 1px solid $grey400;
+  .ProductCard {
+    display: flex;
+    gap: 15px;
+  }
+  .FirstLine {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    p {
+      color: $grey900 !important;
+    }
+    .BorderBtn {
+      border-radius: 5px;
+    }
+    .brandName {
+      font-size: 14px;
+      color: $grey700 !important;
+    }
+  }
+}

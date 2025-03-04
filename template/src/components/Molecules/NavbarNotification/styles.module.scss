@@ -1,0 +1,75 @@
+@use "/styles/all" as *;
+
+.navbarNotificationContainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  .btn {
+    cursor: pointer;
+    margin-top: 2px;
+  }
+}
+
+.hideOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: all 0.3s ease-in-out;
+
+  &.show {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.notificationOverlay {
+  z-index: 1000;
+
+  width: 637px;
+  padding: 24px;
+
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  .notificationHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    .markAsRead {
+      cursor: pointer;
+    }
+  }
+
+  .notificationList {
+    margin-top: 12px;
+  }
+}
+
+.notificationPopover :global {
+  .ant-popover-arrow {
+    display: none;
+  }
+  .ant-popover-inner {
+    padding: unset;
+
+    background-color: unset;
+    background-clip: unset;
+    border-radius: unset;
+    box-shadow: unset;
+  }
+}

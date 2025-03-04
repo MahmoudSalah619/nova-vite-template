@@ -1,0 +1,11 @@
+@use "/styles/all" as *;
+
+.container {
+  padding: 16px 24px;
+  background-color: $light;
+  border: 1px solid $grey200;
+  border-radius: 12px;
+  .infoContainer {
+    margin-top: 18px;
+  }
+}

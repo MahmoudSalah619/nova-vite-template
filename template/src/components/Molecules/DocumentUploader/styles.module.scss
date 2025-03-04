@@ -1,0 +1,39 @@
+@use "/styles/all" as *;
+
+.commercialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  .textContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .previewContainer {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    .imgContainer {
+      width: 100px;
+      height: 100px;
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .uploadDragger {
+      :global {
+        .ant-upload-drag {
+          width: fit-content;
+          padding: unset !important;
+          background-color: $transparent;
+          border: unset !important;
+        }
+        .ant-upload-btn {
+          padding: unset !important;
+        }
+      }
+    }
+  }
+}

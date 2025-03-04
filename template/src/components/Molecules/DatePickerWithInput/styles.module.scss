@@ -1,0 +1,42 @@
+@use "/styles/all" as *;
+
+.customFooterContent {
+  display: flex;
+  gap: 12px;
+  height: 44px;
+  margin-block: 20px;
+
+  .rangeInput {
+    width: 136px;
+    font-family: "GothamMedium";
+    border-radius: 10px !important;
+  }
+}
+
+.rangePicker {
+  position: absolute;
+  width: 0;
+  visibility: hidden;
+}
+.inputCon {
+  cursor: not-allowed;
+  width: 48%;
+}
+
+.FromInputsContainer {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+input {
+  height: 44px;
+}
+.ToInputsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.label {
+  margin-bottom: 15px !important;
+  font-family: "GothamMedium" !important;
+  font-size: 14px !important;
+}
