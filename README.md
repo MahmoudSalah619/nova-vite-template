@@ -66,25 +66,26 @@ npm run build
 To preview the production build, run:
 
 ```bash
-npm run
+npm run preview
 ```
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
-
-## 📋 Changelog
-
-See the [CHANGELOG](CHANGELOG.md) for a history of changes to this project.
 
 ## 📸 Screenshots
 
 Here are some screenshots of the application:
 
 ![Dashboard/Graphs](screenshots/dashboard.png)
-![Forms](screenshots/form.png)(screenshots/form2.png)
+![Forms](screenshots/form.png)
+![Forms](screenshots/form2.png)
 ![Tables](screenshots/table.png)
+
+## 📋 Changelog
+
+See the [CHANGELOG](CHANGELOG.md) for a history of changes to this project.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
+
+## 📄 License
+
+This project is licensed under the MIT License.
