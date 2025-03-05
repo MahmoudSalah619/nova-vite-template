@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Text from "@/src/components/Atoms/Text";
 import styles from "./styles.module.scss";
 import Button from "@/src/components/Atoms/Button";
-import successJIF from "@/src/assets/images/successJIF.gif";
+import success from "@/src/assets/images/correct.png";
 import Image from "@/src/components/Atoms/Image";
 
 export default function SuccessPassChangedOrganism() {
@@ -11,7 +11,7 @@ export default function SuccessPassChangedOrganism() {
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image
-          src={successJIF}
+          src={success}
           alt="success jif"
           width={225}
           height={225}
