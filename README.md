@@ -85,6 +85,6 @@ See the [CHANGELOG](CHANGELOG.md) for a history of changes to this project.
 
 Here are some screenshots of the application:
 
-![Dashboard](screenshots/dashboard.png)
-![Forms](screenshots/forms.png)
-![Graphs](screenshots/graphs.png)
+![Dashboard/Graphs](screenshots/dashboard.png)
+![Forms](screenshots/form.png)(screenshots/form2.png)
+![Tables](screenshots/table.png)
