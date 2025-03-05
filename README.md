@@ -74,9 +74,9 @@ npm run preview
 Here are some screenshots of the application:
 
 ![Dashboard/Graphs](screenshots/dashboard.png)
+![Tables](screenshots/table.png)
 ![Forms](screenshots/form.png)
 ![Forms](screenshots/form2.png)
-![Tables](screenshots/table.png)
 
 ## 📋 Changelog
 
