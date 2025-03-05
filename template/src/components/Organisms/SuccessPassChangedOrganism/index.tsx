@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import Text from "@/template/src/components/Atoms/Text";
+import Text from "@/src/components/Atoms/Text";
 import styles from "./styles.module.scss";
-import Button from "@/template/src/components/Atoms/Button";
+import Button from "@/src/components/Atoms/Button";
 import successJIF from "@/src/assets/images/successJIF.gif";
-import Image from "@/template/src/components/Atoms/Image";
+import Image from "@/src/components/Atoms/Image";
 
 export default function SuccessPassChangedOrganism() {
   const navigate = useNavigate();

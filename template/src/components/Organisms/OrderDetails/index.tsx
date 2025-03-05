@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import OrderInfo from "../../Molecules/OrderInfo";
 import Text from "../../Atoms/Text";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function OrderDetails() {
   const { t } = useAutoCompleteTranslation();

@@ -1,8 +1,8 @@
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
+import PageHeader from "@/src/components/Molecules/PageHeader";
 import styles from "./styles.module.scss";
-import ProductReviews from "@/template/src/components/Molecules/ProductReviews";
-import ProductDetailsCard from "@/template/src/components/Organisms/ProductDetailsCard";
-import ProductDetailsDateFilter from "@/template/src/components/Organisms/ProductDetailsDateFilter";
+import ProductReviews from "@/src/components/Molecules/ProductReviews";
+import ProductDetailsCard from "@/src/components/Organisms/ProductDetailsCard";
+import ProductDetailsDateFilter from "@/src/components/Organisms/ProductDetailsDateFilter";
 
 function ProductDetails() {
   return (

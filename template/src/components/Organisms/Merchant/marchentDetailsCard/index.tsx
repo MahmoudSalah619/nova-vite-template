@@ -1,10 +1,10 @@
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import CardWrapper from "../../../Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
 import { CardDetails } from "./types";
-import Text from "@/template/src/components/Atoms/Text";
-import SelectionInput from "@/template/src/components/Atoms/SelectionInput";
-import Button from "@/template/src/components/Atoms/Button";
+import Text from "@/src/components/Atoms/Text";
+import SelectionInput from "@/src/components/Atoms/SelectionInput";
+import Button from "@/src/components/Atoms/Button";
 
 function MerchantDetailsCard({
   status,

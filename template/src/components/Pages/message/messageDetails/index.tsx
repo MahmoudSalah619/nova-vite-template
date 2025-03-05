@@ -1,4 +1,4 @@
-import MessageDetailsOrganism from "@/template/src/components/Organisms/MessageDetailsOrganism";
+import MessageDetailsOrganism from "@/src/components/Organisms/MessageDetailsOrganism";
 
 export default function MessageDetails() {
   return (

@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
-import MainTableOrganism from "@/template/src/components/Organisms/MainTableOrganism";
-import Status from "@/template/constants/Status";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import MainTableOrganism from "@/src/components/Organisms/MainTableOrganism";
+import Status from "@/constants/Status";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 export default function SentNotifications() {
   const { t } = useAutoCompleteTranslation();

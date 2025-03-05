@@ -3,7 +3,7 @@ import { Collapse } from "antd";
 import CardWrapper from "../../Wrappers/CardWrapper";
 import Text from "../../Atoms/Text";
 import styles from "./styles.module.scss";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function Faqss() {
   const { t } = useAutoCompleteTranslation();

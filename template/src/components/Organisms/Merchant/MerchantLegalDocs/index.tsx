@@ -1,12 +1,12 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useState } from "react";
 import { Upload, UploadFile } from "antd";
-import Text from "@/template/src/components/Atoms/Text";
+import Text from "@/src/components/Atoms/Text";
 import styles from "./styles.module.scss";
-import Button from "@/template/src/components/Atoms/Button";
-import { Auth } from "@/template/constants/Validation";
+import Button from "@/src/components/Atoms/Button";
+import { Auth } from "@/constants/Validation";
 import CardWrapper from "../../../Wrappers/CardWrapper";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 const { Dragger } = Upload;
 

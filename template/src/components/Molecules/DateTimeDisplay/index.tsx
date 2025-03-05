@@ -1,6 +1,6 @@
 // components/Molecules/DateTimeDisplay.tsx
 
-import Text from "@/template/src/components/Atoms/Text";
+import Text from "@/src/components/Atoms/Text";
 import styles from "./styles.module.scss";
 import { DateTimeDisplayProps } from "./types";
 

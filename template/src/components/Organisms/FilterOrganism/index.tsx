@@ -5,7 +5,7 @@ import Image from "../../Atoms/Image";
 import FilterIcon from "@/src/assets/icons/home/filter.svg";
 import FilterPopover from "../../Molecules/FilterPopover";
 import Button from "../../Atoms/Button";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function FilterOrganism() {
   const { t } = useAutoCompleteTranslation();

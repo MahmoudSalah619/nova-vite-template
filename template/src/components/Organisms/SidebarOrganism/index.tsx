@@ -2,11 +2,11 @@ import { useLocation } from "react-router-dom";
 import styles from "./styles.module.scss";
 import SidebarLink from "../../Molecules/SidebarLink";
 import Text from "../../Atoms/Text";
-import useGetUserInfo from "@/template/hooks/useGetUserInfo";
+import useGetUserInfo from "@/hooks/useGetUserInfo";
 import { generalLinks, supportLinks } from "./links";
-import logoutHandler from "@/template/utils/logoutHandler";
+import logoutHandler from "@/utils/logoutHandler";
 import logo from "@/src/assets/icons/Logo.svg";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function SidebarOrganism() {
   const { t } = useAutoCompleteTranslation();

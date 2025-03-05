@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 import SearchIcon from "@/src/assets/icons/home/search-orange-icon.svg";
 import SelectionInput from "../../Atoms/SelectionInput";
 import TextInput from "../../Atoms/TextInput";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function SearchFilterBarForUsers() {
   const { t } = useAutoCompleteTranslation();

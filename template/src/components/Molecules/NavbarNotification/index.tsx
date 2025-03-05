@@ -6,7 +6,7 @@ import NotificationIcon from "@/src/assets/icons/navbar/notification-icon.svg";
 import AvatarImage from "@/src/assets/icons/navbar/avatar.svg";
 import NotificationItem from "../NotificationItem";
 import Text from "../../Atoms/Text";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function NavbarNotification() {
   const { t } = useAutoCompleteTranslation();

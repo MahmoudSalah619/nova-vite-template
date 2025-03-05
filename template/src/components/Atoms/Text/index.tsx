@@ -1,6 +1,6 @@
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import COLORS from "@/template/constants/COLORS";
-import FontFamily from "@/template/constants/FontFamily";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import COLORS from "@/constants/COLORS";
+import FontFamily from "@/constants/FontFamily";
 import { TextProps } from "./types";
 
 export default function Text({

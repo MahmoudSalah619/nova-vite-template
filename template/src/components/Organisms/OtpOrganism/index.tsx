@@ -1,10 +1,10 @@
 import { Input } from "antd";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
-import Text from "@/template/src/components/Atoms/Text";
+import Text from "@/src/components/Atoms/Text";
 import styles from "./styles.module.scss";
-import Button from "@/template/src/components/Atoms/Button";
-import ValidationSchema, { Auth } from "@/template/constants/Validation";
+import Button from "@/src/components/Atoms/Button";
+import ValidationSchema, { Auth } from "@/constants/Validation";
 import Timer from "../../Molecules/Timer";
 
 export default function OtpOrganism() {

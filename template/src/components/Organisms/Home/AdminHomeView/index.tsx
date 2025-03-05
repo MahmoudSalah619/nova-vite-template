@@ -1,15 +1,15 @@
 import { useState } from "react";
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import RevenueLineChart from "@/template/src/components/Molecules/RevenueLineChart";
-import OrdersBarChart from "@/template/src/components/Molecules/OrdersLineChart";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import RevenueLineChart from "@/src/components/Molecules/RevenueLineChart";
+import OrdersBarChart from "@/src/components/Molecules/OrdersLineChart";
 import FilterOrganism from "../../FilterOrganism";
 import MainTableOrganism from "../../MainTableOrganism";
 import styles from "../styles.module.scss";
-import FilterButtons from "@/template/src/components/Molecules/FilterButtons";
-import DatePicker from "@/template/src/components/Molecules/DatePicker";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import StatusIndicator from "@/template/src/components/Molecules/StatusIndicator";
-import Status from "@/template/constants/Status";
+import FilterButtons from "@/src/components/Molecules/FilterButtons";
+import DatePicker from "@/src/components/Molecules/DatePicker";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import StatusIndicator from "@/src/components/Molecules/StatusIndicator";
+import Status from "@/constants/Status";
 import TotalChart from "../../TotalCharts";
 
 function AdminHomeView() {

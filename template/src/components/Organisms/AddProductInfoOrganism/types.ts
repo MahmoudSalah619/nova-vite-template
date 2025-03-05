@@ -1,4 +1,4 @@
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 
 export interface AddProductInfoOrganismProps {
   cardTitle: TranslationKeyEnum;

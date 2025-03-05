@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import legalDoc from "@/src/assets/images/legalDoc.png";
 import DocumentUploader from "../DocumentUploader";
 import CardWrapper from "../../Wrappers/CardWrapper";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 
 function LegalDocuments() {
   const [documents, setDocuments] = useState([

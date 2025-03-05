@@ -1,5 +1,5 @@
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import UserDetailsCard from "@/template/src/components/Organisms/User/UserDetailsCard";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import UserDetailsCard from "@/src/components/Organisms/User/UserDetailsCard";
 import styles from "./styles.module.scss";
 import UserTabs from "../UserTabs";
 

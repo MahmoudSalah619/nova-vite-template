@@ -1,9 +1,9 @@
-import StaticticsCardsContent from "@/template/src/components/Organisms/StaticticsCardsContent";
+import StaticticsCardsContent from "@/src/components/Organisms/StaticticsCardsContent";
 import styles from "./styles.module.scss";
-import RevenueLineChart from "@/template/src/components/Molecules/RevenueLineChart";
-import OrdersBarChart from "@/template/src/components/Molecules/OrdersLineChart";
+import RevenueLineChart from "@/src/components/Molecules/RevenueLineChart";
+import OrdersBarChart from "@/src/components/Molecules/OrdersLineChart";
 import star from "@/src/assets/icons/stars/yellowStar.svg";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 
 export default function MainDetails() {
   const Statictics = [

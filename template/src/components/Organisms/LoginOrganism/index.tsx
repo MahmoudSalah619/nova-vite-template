@@ -1,16 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import { Checkbox, CheckboxProps } from "antd";
 import { SubmitHandler, useForm } from "react-hook-form";
-import Text from "@/template/src/components/Atoms/Text";
-import TextInput from "@/template/src/components/Atoms/TextInput";
-import Button from "@/template/src/components/Atoms/Button";
-import HyperLink from "@/template/src/components/Atoms/HyperLink";
-import ValidationSchema, { Auth } from "@/template/constants/Validation";
+import Text from "@/src/components/Atoms/Text";
+import TextInput from "@/src/components/Atoms/TextInput";
+import Button from "@/src/components/Atoms/Button";
+import HyperLink from "@/src/components/Atoms/HyperLink";
+import ValidationSchema, { Auth } from "@/constants/Validation";
 import styles from "./styles.module.scss";
 // import { login } from "@/reducers/authReducer";
-import loginHandler from "@/template/utils/loginHandler";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import { User } from "@/template/src/apis/types/auth";
+import loginHandler from "@/utils/loginHandler";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import { User } from "@/src/apis/types/auth";
 
 export default function LoginOrganism() {
   const { t } = useAutoCompleteTranslation();

@@ -1,4 +1,4 @@
-import Text from "@/template/src/components/Atoms/Text";
+import Text from "@/src/components/Atoms/Text";
 import styles from "./styles.module.scss";
 import { StatusIndicatorProps } from "./types";
 

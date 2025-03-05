@@ -3,7 +3,7 @@ import { ChangeEvent } from "react";
 import styles from "./styles.module.scss";
 import SearchIcon from "@/src/assets/icons/home/search-orange-icon.svg";
 import TextInput from "../../Atoms/TextInput";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function SearchFilterBarForNotifications() {
   const { t } = useAutoCompleteTranslation();

@@ -1,10 +1,10 @@
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import OrderDetails from "@/template/src/components/Organisms/OrderDetails";
-import FilterOrganism from "@/template/src/components/Organisms/FilterOrganism";
-import DatePicker from "@/template/src/components/Molecules/DatePicker";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import OrderDetails from "@/src/components/Organisms/OrderDetails";
+import FilterOrganism from "@/src/components/Organisms/FilterOrganism";
+import DatePicker from "@/src/components/Molecules/DatePicker";
 import styles from "./styles.module.scss";
-import ItemsInOrder from "@/template/src/components/Organisms/ItemsInOrder";
-import OrderTimeline from "@/template/src/components/Organisms/OrderTimeLine";
+import ItemsInOrder from "@/src/components/Organisms/ItemsInOrder";
+import OrderTimeline from "@/src/components/Organisms/OrderTimeLine";
 
 function OrderDetailsPage() {
   return (

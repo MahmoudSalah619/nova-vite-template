@@ -1,4 +1,4 @@
-import ChangPasswordOrganism from "@/template/src/components/Organisms/ChangPasswordOrganism";
+import ChangPasswordOrganism from "@/src/components/Organisms/ChangPasswordOrganism";
 
 function ChangePassword() {
   return <ChangPasswordOrganism />;

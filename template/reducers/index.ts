@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 // import rtkQueryErrorLogger from "apis/middlewares/errorMiddleware";
 import appReducer from "./appReducer";
 import authReducer from "./authReducer";
-import api from "@/template/src/apis";
+import api from "@/src/apis";
 
 const store = configureStore({
   reducer: {

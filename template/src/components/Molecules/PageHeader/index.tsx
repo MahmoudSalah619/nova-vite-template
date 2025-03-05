@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import Text from "../../Atoms/Text";
 import styles from "./styles.module.scss";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 import Image from "../../Atoms/Image";
 import vector from "@/src/assets/images/vector.png";
 

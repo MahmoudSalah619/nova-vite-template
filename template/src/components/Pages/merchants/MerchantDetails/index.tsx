@@ -1,6 +1,6 @@
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
+import PageHeader from "@/src/components/Molecules/PageHeader";
 import styles from "./styles.module.scss";
-import MerchantDetailsCard from "@/template/src/components/Organisms/Merchant/marchentDetailsCard";
+import MerchantDetailsCard from "@/src/components/Organisms/Merchant/marchentDetailsCard";
 import MerchantTabs from "../MerchantTabs";
 
 export default function MerchantDetails() {

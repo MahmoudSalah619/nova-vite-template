@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
-import FontFamily from "@/template/constants/FontFamily";
-import COLORS from "@/template/constants/COLORS";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
+import FontFamily from "@/constants/FontFamily";
+import COLORS from "@/constants/COLORS";
 
 export interface TextProps {
   children?: ReactNode;

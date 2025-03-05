@@ -4,7 +4,7 @@ import Text from "../../Atoms/Text";
 import TextInput from "../../Atoms/TextInput";
 import Button from "../../Atoms/Button";
 import CardWrapper from "../../Wrappers/CardWrapper";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function ContactUs() {
   const { t } = useAutoCompleteTranslation();

@@ -1,4 +1,4 @@
-import SuccessSignUpOrganism from "@/template/src/components/Organisms/SuccessSignUpOrganism";
+import SuccessSignUpOrganism from "@/src/components/Organisms/SuccessSignUpOrganism";
 
 function SuccessSignUp() {
   return <SuccessSignUpOrganism />;

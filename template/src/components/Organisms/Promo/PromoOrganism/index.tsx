@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./styles.module.scss";
-import MainTableOrganism from "@/template/src/components/Organisms/MainTableOrganism";
+import MainTableOrganism from "@/src/components/Organisms/MainTableOrganism";
 import StatusIndicator from "../../../Molecules/StatusIndicator";
 // import DateTimeDisplay from "../../../Molecules/DateTimeDisplay";
-import Status from "@/template/constants/Status";
+import Status from "@/constants/Status";
 import PageHeader from "../../../Molecules/PageHeader";
 import Button from "../../../Atoms/Button";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import Text from "@/template/src/components/Atoms/Text";
-import SearchFilterBarForPromo from "@/template/src/components/Molecules/SearchFilterForPromo";
-import ActionIndicator from "@/template/src/components/Molecules/ActionBtnForPromo";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import Text from "@/src/components/Atoms/Text";
+import SearchFilterBarForPromo from "@/src/components/Molecules/SearchFilterForPromo";
+import ActionIndicator from "@/src/components/Molecules/ActionBtnForPromo";
 
 export default function PromoOrganism() {
   const { t } = useAutoCompleteTranslation();

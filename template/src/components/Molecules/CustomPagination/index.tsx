@@ -6,7 +6,7 @@ import ArrowLeft from "@/src/assets/icons/home/arrow-left.svg";
 import ArrowRight from "@/src/assets/icons/home/arrow-right.svg";
 import styles from "./styles.module.scss";
 import { CustomPaginationProps } from "../../Organisms/MainTableOrganism/types";
-import i18n from "@/template/i18n";
+import i18n from "@/i18n";
 
 function CustomPagination({
   total,

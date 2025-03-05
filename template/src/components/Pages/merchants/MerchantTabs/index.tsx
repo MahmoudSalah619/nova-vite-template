@@ -1,13 +1,13 @@
 import { Tabs, TabsProps } from "antd";
-import CardWrapper from "@/template/src/components/Wrappers/CardWrapper";
-import ProductReviews from "@/template/src/components/Molecules/ProductReviews";
+import CardWrapper from "@/src/components/Wrappers/CardWrapper";
+import ProductReviews from "@/src/components/Molecules/ProductReviews";
 import styles from "./styles.module.scss";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import MainDetails from "../MerchantDetails/MainDetails";
 import MerchantOrders from "../MerchantDetails/Orders";
 import MerchantProducts from "../MerchantDetails/Products";
 import PendingProducts from "../MerchantDetails/PendingProducts";
-import Image from "@/template/src/components/Atoms/Image";
+import Image from "@/src/components/Atoms/Image";
 import filter from "@/src/assets/icons/filter-lines.svg";
 
 export default function MerchantTabs() {

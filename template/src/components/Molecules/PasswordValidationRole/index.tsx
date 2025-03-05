@@ -1,10 +1,10 @@
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 import Image from "../../Atoms/Image";
 import Text from "../../Atoms/Text";
 import styles from "./styles.module.scss";
 import correct from "@/src/assets/images/correct.png";
 import wrong from "@/src/assets/images/wrong.png";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function PasswordValidationRole({
   title,

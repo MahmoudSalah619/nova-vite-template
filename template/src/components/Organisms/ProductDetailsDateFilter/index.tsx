@@ -3,8 +3,8 @@ import DatePicker from "../../Molecules/DatePicker";
 import FilterButtons from "../../Molecules/FilterButtons";
 import CardWrapper from "../../Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 import StaticticsCard from "../../Molecules/StaticticsCard";
 
 function ProductDetailsDateFilter() {

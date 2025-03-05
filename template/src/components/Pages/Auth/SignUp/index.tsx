@@ -1,4 +1,4 @@
-import SignUpOrganism from "@/template/src/components/Organisms/SignUpOrganism";
+import SignUpOrganism from "@/src/components/Organisms/SignUpOrganism";
 
 function SignUp() {
   return <SignUpOrganism />;

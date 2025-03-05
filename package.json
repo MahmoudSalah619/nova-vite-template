@@ -28,7 +28,7 @@
   },
   "bugs": {},
   "license": "MIT",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "scripts": {
     "start": "vite  --port 3000",
     "start_staging": "vite --port 9130",

@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { SubmitHandler, useForm } from "react-hook-form";
-import Text from "@/template/src/components/Atoms/Text";
+import Text from "@/src/components/Atoms/Text";
 import styles from "./styles.module.scss";
-import TextInput from "@/template/src/components/Atoms/TextInput";
-import Button from "@/template/src/components/Atoms/Button";
-import ValidationSchema, { Auth } from "@/template/constants/Validation";
+import TextInput from "@/src/components/Atoms/TextInput";
+import Button from "@/src/components/Atoms/Button";
+import ValidationSchema, { Auth } from "@/constants/Validation";
 
 export default function ForgetPasswordOrganism() {
   const navigate = useNavigate();

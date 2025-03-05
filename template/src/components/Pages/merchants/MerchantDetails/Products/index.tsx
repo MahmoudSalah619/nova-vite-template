@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import MainTableOrganism from "@/template/src/components/Organisms/MainTableOrganism";
-import ProductName from "@/template/src/components/Molecules/ProductName";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import MainTableOrganism from "@/src/components/Organisms/MainTableOrganism";
+import ProductName from "@/src/components/Molecules/ProductName";
 import AvatarImage from "@/src/assets/icons/navbar/avatar.svg";
-import DateTimeDisplay from "@/template/src/components/Molecules/DateTimeDisplay";
-import StatusIndicator from "@/template/src/components/Molecules/StatusIndicator";
-import Status from "@/template/constants/Status";
+import DateTimeDisplay from "@/src/components/Molecules/DateTimeDisplay";
+import StatusIndicator from "@/src/components/Molecules/StatusIndicator";
+import Status from "@/constants/Status";
 
 export default function MerchantProducts() {
   const { t } = useAutoCompleteTranslation();

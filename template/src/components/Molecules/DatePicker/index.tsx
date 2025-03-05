@@ -11,7 +11,7 @@ import RangeInput from "../RangeInput";
 import Button from "../../Atoms/Button";
 import SelectDate from "@/src/assets/icons/home/select-date.svg";
 import Image from "../../Atoms/Image";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 
 const { RangePicker } = DatePickerANTD;
 

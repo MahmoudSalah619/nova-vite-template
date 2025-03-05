@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Status from "@/template/constants/Status";
-import useGetUserInfo from "@/template/hooks/useGetUserInfo";
+import Status from "@/constants/Status";
+import useGetUserInfo from "@/hooks/useGetUserInfo";
 import FilterButtons from "../../Molecules/FilterButtons";
 import MainTableOrganism from "../../Organisms/MainTableOrganism";
 import styles from "./styles.module.scss";
@@ -10,8 +10,8 @@ import PageHeader from "../../Molecules/PageHeader";
 import StaticticsCard from "../../Molecules/StaticticsCard";
 import Button from "../../Atoms/Button";
 import DatePicker from "../../Molecules/DatePicker";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 
 function Orders() {
   const { t } = useAutoCompleteTranslation();

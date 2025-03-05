@@ -1,4 +1,4 @@
-import PromoGeneralInfoOrganism from "@/template/src/components/Organisms/Promo/GeneralInfo";
+import PromoGeneralInfoOrganism from "@/src/components/Organisms/Promo/GeneralInfo";
 import styles from "./styles.module.scss";
 
 export default function AddPromo() {

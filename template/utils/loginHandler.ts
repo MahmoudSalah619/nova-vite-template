@@ -1,7 +1,7 @@
-import store from "@/template/reducers";
-import { login, setUserInfo } from "@/template/reducers/authReducer";
-import api from "@/template/src/apis";
-import { User } from "@/template/src/apis/types/auth";
+import store from "@/reducers";
+import { login, setUserInfo } from "@/reducers/authReducer";
+import api from "@/src/apis";
+import { User } from "@/src/apis/types/auth";
 
 export default function loginHandler({
   token = "",

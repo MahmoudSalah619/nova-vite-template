@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 import Text from "../../Atoms/Text";
 import UploadIcon from "@/src/assets/icons/products/upload-cloud.svg";
 import Image from "../../Atoms/Image";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 const { Dragger } = Upload;
 

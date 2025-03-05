@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import styles from "./styles.module.scss";
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import Text from "@/template/src/components/Atoms/Text";
-import Button from "@/template/src/components/Atoms/Button";
-import CardWrapper from "@/template/src/components/Wrappers/CardWrapper";
-import SubCategory from "@/template/src/components/Molecules/SubCategory";
-import CustomPagination from "@/template/src/components/Molecules/CustomPagination";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import Text from "@/src/components/Atoms/Text";
+import Button from "@/src/components/Atoms/Button";
+import CardWrapper from "@/src/components/Wrappers/CardWrapper";
+import SubCategory from "@/src/components/Molecules/SubCategory";
+import CustomPagination from "@/src/components/Molecules/CustomPagination";
 import Image from "../../../Atoms/Image";
 import filter from "../../../../assets/icons/filter-lines.svg";
 

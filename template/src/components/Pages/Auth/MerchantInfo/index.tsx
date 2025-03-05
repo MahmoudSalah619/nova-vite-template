@@ -1,4 +1,4 @@
-import MerchantInfoOrganism from "@/template/src/components/Organisms/MerchantInfoOrganism";
+import MerchantInfoOrganism from "@/src/components/Organisms/MerchantInfoOrganism";
 
 function MerchantInfo() {
   return <MerchantInfoOrganism />;

@@ -5,7 +5,7 @@ import MainTableOrganism from "../MainTableOrganism";
 import styles from "./styles.module.scss";
 import SearchIcon from "@/src/assets/icons/home/search-orange-icon.svg";
 import Image from "../../Atoms/Image";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function RecipientsTableOrganism() {
   const { t } = useAutoCompleteTranslation();

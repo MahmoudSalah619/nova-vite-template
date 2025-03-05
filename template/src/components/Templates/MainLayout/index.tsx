@@ -1,7 +1,7 @@
 import { ToastContainer } from "react-toastify";
 import { ReactNode } from "react";
 import styles from "./styles.module.scss";
-import useAuth from "@/template/hooks/useAuth";
+import useAuth from "@/hooks/useAuth";
 
 export default function MainLayout({ children }: { children: ReactNode }) {
   useAuth();

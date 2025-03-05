@@ -5,7 +5,7 @@ import RangeInput from "../RangeInput";
 import styles from "./styles.module.scss";
 import { FilterPopoverProps } from "./types";
 import Button from "../../Atoms/Button";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function FilterPopover({
   className,

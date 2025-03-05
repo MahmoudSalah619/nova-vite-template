@@ -1,9 +1,9 @@
 import { useLocation } from "react-router-dom";
-import CardWrapper from "@/template/src/components/Wrappers/CardWrapper";
+import CardWrapper from "@/src/components/Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import TextInput from "@/template/src/components/Atoms/TextInput";
-import RichTextEditor from "@/template/src/components/Molecules/RichTextEditor";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import TextInput from "@/src/components/Atoms/TextInput";
+import RichTextEditor from "@/src/components/Molecules/RichTextEditor";
 
 function EditCategoryGeneralInfoOrganism() {
   const { t } = useAutoCompleteTranslation();

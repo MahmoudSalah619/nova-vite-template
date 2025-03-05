@@ -6,7 +6,7 @@ import {
   XAxis,
 } from "recharts";
 import styles from "./styles.module.scss";
-import COLORS from "@/template/constants/COLORS";
+import COLORS from "@/constants/COLORS";
 import Text from "../../Atoms/Text";
 
 function RevenueLineChart({ data }: { data?: [] }) {

@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import FontFamily from "@/template/constants/FontFamily";
-import COLORS from "@/template/constants/COLORS";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import FontFamily from "@/constants/FontFamily";
+import COLORS from "@/constants/COLORS";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 
 export interface CustomButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {

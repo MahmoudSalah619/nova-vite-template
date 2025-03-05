@@ -1,4 +1,4 @@
-import OtpOrganism from "@/template/src/components/Organisms/OtpOrganism";
+import OtpOrganism from "@/src/components/Organisms/OtpOrganism";
 
 export default function OTP() {
   return <OtpOrganism />;

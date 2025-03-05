@@ -2,7 +2,7 @@ import { useState } from "react";
 import { DatePicker as DatePickerANTD, Input, TimePicker } from "antd";
 import type { Dayjs } from "dayjs";
 import styles from "./styles.module.scss";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 const { RangePicker } = DatePickerANTD;
 

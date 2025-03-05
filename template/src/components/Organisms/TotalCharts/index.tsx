@@ -1,7 +1,7 @@
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer } from "recharts";
 import styles from "./styles.module.scss";
 import Text from "../../Atoms/Text";
-import COLORS from "@/template/constants/COLORS";
+import COLORS from "@/constants/COLORS";
 
 export default function TotalChart({ data }: { data?: [] }) {
   const fakeData = [

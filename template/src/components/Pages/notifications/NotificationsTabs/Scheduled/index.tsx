@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
-import MainTableOrganism from "@/template/src/components/Organisms/MainTableOrganism";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import MainTableOrganism from "@/src/components/Organisms/MainTableOrganism";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 export default function ScheduledNotifications() {
   const { t } = useAutoCompleteTranslation();

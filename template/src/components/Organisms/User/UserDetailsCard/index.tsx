@@ -1,7 +1,7 @@
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import styles from "./styles.module.scss";
-import Text from "@/template/src/components/Atoms/Text";
-import SelectionInput from "@/template/src/components/Atoms/SelectionInput";
+import Text from "@/src/components/Atoms/Text";
+import SelectionInput from "@/src/components/Atoms/SelectionInput";
 import { CardDetails } from "./types";
 import CardWrapper from "../../../Wrappers/CardWrapper";
 

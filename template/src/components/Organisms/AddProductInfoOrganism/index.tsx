@@ -5,7 +5,7 @@ import Image from "../../Atoms/Image";
 import DeleteIcon from "@/src/assets/icons/products/delete-icon.svg";
 import Button from "../../Atoms/Button";
 import { AddProductInfoOrganismProps } from "./types";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function AddProductInfoOrganism({
   cardTitle,

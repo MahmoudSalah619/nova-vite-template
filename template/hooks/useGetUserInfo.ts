@@ -1,7 +1,7 @@
 // import { useGetUserInfoQuery } from "apis/services/auth";
 // import { RootState } from "@reduxjs/toolkit/query";
 import { useSelector } from "react-redux";
-import { RootState } from "@/template/reducers";
+import { RootState } from "@/reducers";
 
 export default function useGetUserInfo() {
   const userData = useSelector((state: RootState) => state.auth.userData);

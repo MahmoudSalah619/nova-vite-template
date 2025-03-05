@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import Button from "@/template/src/components/Atoms/Button";
-import AddCategoryGeneralInfoOrganism from "@/template/src/components/Organisms/Categories/AddCategoryGeneralInfoOrganism";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import Button from "@/src/components/Atoms/Button";
+import AddCategoryGeneralInfoOrganism from "@/src/components/Organisms/Categories/AddCategoryGeneralInfoOrganism";
 
 function AddCategory() {
   return (

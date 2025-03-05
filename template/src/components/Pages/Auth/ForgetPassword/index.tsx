@@ -1,4 +1,4 @@
-import ForgetPasswordOrganism from "@/template/src/components/Organisms/ForgetPasswordOrganism";
+import ForgetPasswordOrganism from "@/src/components/Organisms/ForgetPasswordOrganism";
 
 function ForgetPassword() {
   return <ForgetPasswordOrganism />;

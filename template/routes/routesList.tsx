@@ -1,19 +1,19 @@
-import Home from "@/template/src/components/Pages/home";
-import Login from "@/template/src/components/Pages/Auth/Login";
-import AuthLayout from "@/template/src/components/Templates/AuthLayout";
-import DashboardLayout from "@/template/src/components/Templates/DashboardLayout";
-import Products from "@/template/src/components/Pages/products";
-import AddProduct from "@/template/src/components/Pages/products/AddProduct";
-import ProductDetails from "@/template/src/components/Pages/products/ProductDetails";
-import Reviews from "@/template/src/components/Pages/products/Reviews";
-import EditProduct from "@/template/src/components/Pages/products/EditProduct";
-import Orders from "@/template/src/components/Pages/orders";
-import OrderDetailsPage from "@/template/src/components/Pages/orders/OrderDetails";
-import Promo from "@/template/src/components/Pages/promo";
-import AddPromo from "@/template/src/components/Pages/promo/addPromo";
-import Faqs from "@/template/src/components/Pages/Faqs";
-import BrandProfile from "@/template/src/components/Pages/BrandProfile";
-import ContactUS from "@/template/src/components/Pages/contactUs";
+import Home from "@/src/components/Pages/home";
+import Login from "@/src/components/Pages/Auth/Login";
+import AuthLayout from "@/src/components/Templates/AuthLayout";
+import DashboardLayout from "@/src/components/Templates/DashboardLayout";
+import Products from "@/src/components/Pages/products";
+import AddProduct from "@/src/components/Pages/products/AddProduct";
+import ProductDetails from "@/src/components/Pages/products/ProductDetails";
+import Reviews from "@/src/components/Pages/products/Reviews";
+import EditProduct from "@/src/components/Pages/products/EditProduct";
+import Orders from "@/src/components/Pages/orders";
+import OrderDetailsPage from "@/src/components/Pages/orders/OrderDetails";
+import Promo from "@/src/components/Pages/promo";
+import AddPromo from "@/src/components/Pages/promo/addPromo";
+import Faqs from "@/src/components/Pages/Faqs";
+import BrandProfile from "@/src/components/Pages/BrandProfile";
+import ContactUS from "@/src/components/Pages/contactUs";
 
 export default {
   // Auth screens

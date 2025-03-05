@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import StatusIndicator from "@/template/src/components/Molecules/StatusIndicator";
-import MainTableOrganism from "@/template/src/components/Organisms/MainTableOrganism";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import StatusIndicator from "@/src/components/Molecules/StatusIndicator";
+import MainTableOrganism from "@/src/components/Organisms/MainTableOrganism";
 import styles from "./styles.module.scss";
-import Status from "@/template/constants/Status";
-import Button from "@/template/src/components/Atoms/Button";
+import Status from "@/constants/Status";
+import Button from "@/src/components/Atoms/Button";
 import bag from "@/src/assets/images/bag.png";
-import Image from "@/template/src/components/Atoms/Image";
-import Text from "@/template/src/components/Atoms/Text";
+import Image from "@/src/components/Atoms/Image";
+import Text from "@/src/components/Atoms/Text";
 
 export default function UserOrders({ hasOrders }: { hasOrders: boolean }) {
   const { t } = useAutoCompleteTranslation();

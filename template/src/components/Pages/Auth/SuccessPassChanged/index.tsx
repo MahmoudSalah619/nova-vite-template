@@ -1,4 +1,4 @@
-import SuccessPassChangedOrganism from "@/template/src/components/Organisms/SuccessPassChangedOrganism";
+import SuccessPassChangedOrganism from "@/src/components/Organisms/SuccessPassChangedOrganism";
 
 function SuccessPassChanged() {
   return <SuccessPassChangedOrganism />;

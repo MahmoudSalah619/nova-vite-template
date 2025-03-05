@@ -4,9 +4,9 @@ import {
   useSelector,
 } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
-import { RootState } from "@/template/reducers";
+import { RootState } from "@/reducers";
 // import { setUserInfo } from "reducers/authReducer";
-import loginHandler from "@/template/utils/loginHandler";
+import loginHandler from "@/utils/loginHandler";
 // import { useLazyGetUserInfoQuery } from "@/src/apis/services/auth";
 
 export default function useAuth() {

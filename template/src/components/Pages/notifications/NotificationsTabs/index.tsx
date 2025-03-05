@@ -1,6 +1,6 @@
 import { Tabs, TabsProps } from "antd";
-import CardWrapper from "@/template/src/components/Wrappers/CardWrapper";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import CardWrapper from "@/src/components/Wrappers/CardWrapper";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import ScheduledNotifications from "./Scheduled";
 import SentNotificationsOrganism from "./Sent";
 

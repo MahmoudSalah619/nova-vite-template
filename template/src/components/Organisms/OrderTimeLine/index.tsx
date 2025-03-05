@@ -1,4 +1,4 @@
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import Text from "../../Atoms/Text";
 import CardWrapper from "../../Wrappers/CardWrapper";
 import styles from "./styles.module.scss";

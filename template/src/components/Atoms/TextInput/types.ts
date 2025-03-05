@@ -1,6 +1,6 @@
 import { ChangeEventHandler } from "react";
 import { UseFormRegisterReturn } from "react-hook-form";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 
 export interface TextInputAtomProps {
   name?: string;

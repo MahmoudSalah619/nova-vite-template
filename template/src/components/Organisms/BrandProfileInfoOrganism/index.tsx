@@ -8,7 +8,7 @@ import ProfileImage from "../../Molecules/ProfileImage";
 import vector from "@/src/assets/images/vector.png";
 import Text from "../../Atoms/Text";
 import LegalDocuments from "../../Molecules/LegalDocuments";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 const { Dragger } = Upload;
 

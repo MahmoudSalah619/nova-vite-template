@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import Text from "../../Atoms/Text";
 import { RangeInputProps } from "./types";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function RangeInput({
   title,

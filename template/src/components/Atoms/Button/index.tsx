@@ -1,4 +1,4 @@
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import Text from "../Text";
 import styles from "./styles.module.scss";
 import { CustomButtonProps } from "./types";

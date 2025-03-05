@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 import Text from "../../Atoms/Text";
 import SearchIcon from "@/src/assets/icons/home/search-orange-icon.svg";
 import Image from "../../Atoms/Image";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import { CheckboxGroupProps } from "./types";
 
 function CheckboxGroup({

@@ -1,13 +1,13 @@
-import CardWrapper from "@/template/src/components/Wrappers/CardWrapper";
+import CardWrapper from "@/src/components/Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import SelectionInput from "@/template/src/components/Atoms/SelectionInput";
-import TextInput from "@/template/src/components/Atoms/TextInput";
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import Button from "@/template/src/components/Atoms/Button";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import SelectionInput from "@/src/components/Atoms/SelectionInput";
+import TextInput from "@/src/components/Atoms/TextInput";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import Button from "@/src/components/Atoms/Button";
 import AddPromoIncludedProducts from "../../AddPromoIncludedProducts";
-import Text from "@/template/src/components/Atoms/Text";
-import DatePickerWithInput from "@/template/src/components/Molecules/DatePickerWithInput";
+import Text from "@/src/components/Atoms/Text";
+import DatePickerWithInput from "@/src/components/Molecules/DatePickerWithInput";
 
 function PromoGeneralInfoOrganism() {
   const { t } = useAutoCompleteTranslation();

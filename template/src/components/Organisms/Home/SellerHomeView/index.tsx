@@ -1,16 +1,16 @@
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import DatePicker from "@/template/src/components/Molecules/DatePicker";
-import RevenueLineChart from "@/template/src/components/Molecules/RevenueLineChart";
-import OrdersBarChart from "@/template/src/components/Molecules/OrdersLineChart";
-import ProductName from "@/template/src/components/Molecules/ProductName";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import DatePicker from "@/src/components/Molecules/DatePicker";
+import RevenueLineChart from "@/src/components/Molecules/RevenueLineChart";
+import OrdersBarChart from "@/src/components/Molecules/OrdersLineChart";
+import ProductName from "@/src/components/Molecules/ProductName";
 import AvatarImage from "@/src/assets/icons/navbar/avatar.svg";
 import FilterOrganism from "../../FilterOrganism";
 import StaticticsCardsContent from "../../StaticticsCardsContent";
 import MainTableOrganism from "../../MainTableOrganism";
 import styles from "../styles.module.scss";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import star from "@/src/assets/icons/stars/yellowStar.svg";
-import { TranslationKeyEnum } from "@/template/types/TranslationKeyEnum";
+import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
 
 function SellerHomeView() {
   const { t } = useAutoCompleteTranslation();

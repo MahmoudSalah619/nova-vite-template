@@ -1,8 +1,8 @@
 import styles from "./styles.module.scss";
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import Button from "@/template/src/components/Atoms/Button";
-import MerchantLegalDocs from "@/template/src/components/Organisms/Merchant/MerchantLegalDocs";
-import MerchantGeneralInfo from "@/template/src/components/Organisms/Merchant/MerchantGeneralInfo";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import Button from "@/src/components/Atoms/Button";
+import MerchantLegalDocs from "@/src/components/Organisms/Merchant/MerchantLegalDocs";
+import MerchantGeneralInfo from "@/src/components/Organisms/Merchant/MerchantGeneralInfo";
 
 export default function AddMerchant() {
   return (

@@ -1,8 +1,8 @@
-import RecipientsTableOrganism from "@/template/src/components/Organisms/RecipientsTableOrganism";
+import RecipientsTableOrganism from "@/src/components/Organisms/RecipientsTableOrganism";
 import styles from "./styles.module.scss";
-import PageHeader from "@/template/src/components/Molecules/PageHeader";
-import Button from "@/template/src/components/Atoms/Button";
-import NotificationGeneralInfoOrganism from "@/template/src/components/Organisms/NotificationGeneralInfo";
+import PageHeader from "@/src/components/Molecules/PageHeader";
+import Button from "@/src/components/Atoms/Button";
+import NotificationGeneralInfoOrganism from "@/src/components/Organisms/NotificationGeneralInfo";
 
 function PushNotifications() {
   return (

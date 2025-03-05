@@ -3,7 +3,7 @@ import { TextInputAtomProps } from "./types";
 import styles from "./styles.module.scss";
 import Text from "../Text";
 import Image from "../Image";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 export default function TextInput({
   containerStyle,

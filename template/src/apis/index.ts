@@ -6,8 +6,8 @@ import {
   FetchBaseQueryError,
   FetchArgs,
 } from "@reduxjs/toolkit/query/react";
-import { login, logout } from "@/template/reducers/authReducer";
-import { RootState } from "@/template/reducers";
+import { login, logout } from "@/reducers/authReducer";
+import { RootState } from "@/reducers";
 import tagTypes from "./tagTypes";
 import { AuthTokenResponse } from "./types/auth";
 import DomainUrl from "./Domain";

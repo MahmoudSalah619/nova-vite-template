@@ -5,7 +5,7 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
-import COLORS from "@/template/constants/COLORS";
+import COLORS from "@/constants/COLORS";
 import styles from "./styles.module.scss";
 import Text from "../../Atoms/Text";
 

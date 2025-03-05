@@ -1,5 +1,5 @@
-import Image from "@/template/src/components/Atoms/Image";
-import Text from "@/template/src/components/Atoms/Text";
+import Image from "@/src/components/Atoms/Image";
+import Text from "@/src/components/Atoms/Text";
 import PublishedIcon from "@/src/assets/icons/products/published.svg";
 import InReviewIcon from "@/src/assets/icons/products/upload-cloud.svg";
 import RejectedIcon from "@/src/assets/icons/products/rejected.svg";
@@ -9,7 +9,7 @@ import InactiveIcon from "@/src/assets/icons/products/inactive.svg";
 import awaitingApp from "@/src/assets/icons/products/awaitingApp.svg";
 import styles from "./styles.module.scss";
 import { StatusIndicatorProps } from "./types";
-import Status from "@/template/constants/Status";
+import Status from "@/constants/Status";
 
 function StatusIndicator({ status }: StatusIndicatorProps) {
   const iconMap: { [key: string]: string } = {

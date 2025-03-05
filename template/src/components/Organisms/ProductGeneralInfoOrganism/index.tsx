@@ -4,7 +4,7 @@ import TextInput from "../../Atoms/TextInput";
 import CardWrapper from "../../Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
 import { GeneralInfoOrganismProps } from "./types";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function ProductGeneralInfoOrganism({
   showProductStatus,

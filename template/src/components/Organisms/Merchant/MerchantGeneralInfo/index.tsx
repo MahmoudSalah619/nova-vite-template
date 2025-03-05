@@ -1,11 +1,11 @@
 import { SubmitHandler, useForm } from "react-hook-form";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
-import TextInput from "@/template/src/components/Atoms/TextInput";
-import RichTextEditor from "@/template/src/components/Molecules/RichTextEditor";
-import CardWrapper from "@/template/src/components/Wrappers/CardWrapper";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import TextInput from "@/src/components/Atoms/TextInput";
+import RichTextEditor from "@/src/components/Molecules/RichTextEditor";
+import CardWrapper from "@/src/components/Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
-import ValidationSchema, { MerchantInfo } from "@/template/constants/Validation";
-import PasswordValidationRole from "@/template/src/components/Molecules/PasswordValidationRole";
+import ValidationSchema, { MerchantInfo } from "@/constants/Validation";
+import PasswordValidationRole from "@/src/components/Molecules/PasswordValidationRole";
 
 export default function MerchantGeneralInfo() {
   const { t } = useAutoCompleteTranslation();

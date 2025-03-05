@@ -1,4 +1,4 @@
-import ProductReviewOrganism from "@/template/src/components/Organisms/ProductReviewsOrganism";
+import ProductReviewOrganism from "@/src/components/Organisms/ProductReviewsOrganism";
 
 export default function Reviews() {
   return (

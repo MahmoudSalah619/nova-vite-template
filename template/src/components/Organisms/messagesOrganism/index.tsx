@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./styles.module.scss";
-import MainTableOrganism from "@/template/src/components/Organisms/MainTableOrganism";
-import Status from "@/template/constants/Status";
-import useAutoCompleteTranslation from "@/template/hooks/useAutoCompleteTranslation";
+import MainTableOrganism from "@/src/components/Organisms/MainTableOrganism";
+import Status from "@/constants/Status";
+import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import PageHeader from "../../Molecules/PageHeader";
 import Button from "../../Atoms/Button";
 import FilterButtons from "../../Molecules/FilterButtons";

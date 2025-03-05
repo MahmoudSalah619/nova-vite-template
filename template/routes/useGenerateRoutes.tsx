@@ -1,8 +1,8 @@
 import { useRoutes } from "react-router-dom";
 
 import { useSelector } from "react-redux";
-import useGetUserInfo from "@/template/hooks/useGetUserInfo";
-import { RootState } from "@/template/reducers";
+import useGetUserInfo from "@/hooks/useGetUserInfo";
+import { RootState } from "@/reducers";
 import routesList from "./routesList";
 
 export default function useGenerateRoutes() {

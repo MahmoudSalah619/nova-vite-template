@@ -1,9 +1,9 @@
 import { SubmitHandler, useForm } from "react-hook-form";
-import ValidationSchema, { Auth } from "@/template/constants/Validation";
+import ValidationSchema, { Auth } from "@/constants/Validation";
 import styles from "./styles.module.scss";
-import Text from "@/template/src/components/Atoms/Text";
-import TextInput from "@/template/src/components/Atoms/TextInput";
-import Button from "@/template/src/components/Atoms/Button";
+import Text from "@/src/components/Atoms/Text";
+import TextInput from "@/src/components/Atoms/TextInput";
+import Button from "@/src/components/Atoms/Button";
 import CardWrapper from "../../Wrappers/CardWrapper";
 
 function AddUserForm() {
