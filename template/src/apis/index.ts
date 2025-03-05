@@ -73,8 +73,11 @@ const baseQueryWithReauth = async (
     };
   };
 
-  // @ts-ignore
-  const isTokenExpire = result?.error?.data?.code?.includes("token_not_valid");
+  const isTokenExpire =
+    result?.error?.data &&
+    typeof result.error.data === "object" &&
+    "code" in (result.error.data as { code: string }) &&
+    (result.error.data as { code: string }).code.includes("token_not_valid");
 
   if (isTokenExpire) {
     const refreshResult = await getNewAccessToken();

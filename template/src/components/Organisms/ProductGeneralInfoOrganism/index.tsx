@@ -1,4 +1,3 @@
-import RichTextEditor from "../../Molecules/RichTextEditor";
 import SelectionInput from "../../Atoms/SelectionInput";
 import TextInput from "../../Atoms/TextInput";
 import CardWrapper from "../../Wrappers/CardWrapper";
@@ -33,11 +32,6 @@ function ProductGeneralInfoOrganism({
           containerStyle={styles.inputContainer}
           label="product_name_column"
           labelStyle={styles.label}
-        />
-
-        <RichTextEditor
-          containerStyle={styles.inputContainer}
-          label={t("Product Description")}
         />
       </div>
 

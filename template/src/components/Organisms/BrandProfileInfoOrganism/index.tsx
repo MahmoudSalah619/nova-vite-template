@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Upload, UploadFile } from "antd";
-import RichTextEditor from "../../Molecules/RichTextEditor";
 import TextInput from "../../Atoms/TextInput";
 import CardWrapper from "../../Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
@@ -65,10 +64,6 @@ function BrandProfileInfoOrganism() {
             label="Email Address"
           />
 
-          <RichTextEditor
-            containerStyle={styles.inputContainer}
-            label={t("Bio")}
-          />
         </div>
       </CardWrapper>
 

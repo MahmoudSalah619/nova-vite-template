@@ -1,4 +1,3 @@
-import RichTextEditor from "../../Molecules/RichTextEditor";
 import SelectionInput from "../../Atoms/SelectionInput";
 import TextInput from "../../Atoms/TextInput";
 import CardWrapper from "../../Wrappers/CardWrapper";
@@ -22,11 +21,6 @@ function NotificationGeneralInfoOrganism() {
           containerStyle={styles.inputContainer}
           label="subject_label"
           labelStyle={styles.label}
-        />
-
-        <RichTextEditor
-          containerStyle={styles.inputContainer}
-          label={t("Messages")}
         />
       </div>
 

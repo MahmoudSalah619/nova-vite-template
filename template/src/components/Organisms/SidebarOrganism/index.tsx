@@ -5,7 +5,7 @@ import Text from "../../Atoms/Text";
 import useGetUserInfo from "@/hooks/useGetUserInfo";
 import { generalLinks, supportLinks } from "./links";
 import logoutHandler from "@/utils/logoutHandler";
-import logo from "@/src/assets/icons/Logo.svg";
+// import logo from "@/src/assets/icons/Logo.svg";
 import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 
 function SidebarOrganism() {
@@ -22,7 +22,7 @@ function SidebarOrganism() {
 
   return (
     <aside>
-      {/* <img width={88} height={51} src={logo} alt="logo" /> */}
+      {/* <Image width={88} height={51} src={logo} alt="logo" /> */}
       <Text fontSize={52} color="primary">Logo</Text>
       <div className={styles.sidebarLinksContainer}>
         <Text

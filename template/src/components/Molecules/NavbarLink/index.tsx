@@ -1,4 +1,4 @@
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, To } from "react-router-dom";
 import { useMemo } from "react";
 import Text from "../../Atoms/Text";
 import styles from "./styles.module.scss";
@@ -62,8 +62,7 @@ function NavbarLink() {
                 {formatSegment(segment)}
               </Text>
             ) : (
-              // @ts-ignore
-              <Link to={index + 1 - pathnames.length}>
+              <Link to={index + 1 - pathnames.length as To}>
                 <Text color="grey900" fontFamily="font500" fontSize={16}>
                   {formatSegment(segment)}
                 </Text>

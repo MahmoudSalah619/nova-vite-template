@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Icon from "../../Atoms/Icon";
 import Text from "../../Atoms/Text";
 import styles from "./styles.module.scss";
 import { SidebarLinkProps } from "./types";
@@ -12,6 +11,7 @@ function SidebarLink({
   href,
   onClick,
 }: SidebarLinkProps) {
+  console.log(icon);
   return (
     <Link
       className={`${styles.navbarLink} ${className} ${

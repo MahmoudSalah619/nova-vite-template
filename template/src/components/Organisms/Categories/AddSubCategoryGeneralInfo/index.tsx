@@ -1,4 +1,3 @@
-import RichTextEditor from "../../../Molecules/RichTextEditor";
 import SelectionInput from "../../../Atoms/SelectionInput";
 import TextInput from "../../../Atoms/TextInput";
 import CardWrapper from "../../../Wrappers/CardWrapper";
@@ -22,11 +21,6 @@ function AddSubCategoryGeneralInfo() {
           containerStyle={styles.inputContainer}
           label="category_name"
           labelStyle={styles.label}
-        />
-
-        <RichTextEditor
-          containerStyle={styles.inputContainer}
-          label={t("Category Description")}
         />
       </div>
 

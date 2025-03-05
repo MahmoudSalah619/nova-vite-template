@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom";
-import RichTextEditor from "../../../Molecules/RichTextEditor";
 import SelectionInput from "../../../Atoms/SelectionInput";
 import TextInput from "../../../Atoms/TextInput";
 import CardWrapper from "../../../Wrappers/CardWrapper";
@@ -28,10 +27,6 @@ function EditSubCategoryGeneralInfo() {
           defaultValue={state}
         />
 
-        <RichTextEditor
-          containerStyle={styles.inputContainer}
-          label={t("Category Description")}
-        />
       </div>
 
       <div className={styles.selectionsHolder}>

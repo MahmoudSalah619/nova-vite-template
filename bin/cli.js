@@ -77,6 +77,8 @@ program
             "eslint-plugin-prettier",
             "eslint-plugin-react",
             "eslint-plugin-react-hooks",
+            "eslint-plugin-react-refresh",
+            "typescript-eslint",
           ],
           {
             cwd: targetPath,

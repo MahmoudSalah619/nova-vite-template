@@ -1,7 +1,7 @@
 
-import { IconProps } from "./types";
+// import { IconProps } from "./types";
 
-export default function Icon({ name, size, color, className }: IconProps) {
+export default function Icon() {
   return (
     <></>
   );

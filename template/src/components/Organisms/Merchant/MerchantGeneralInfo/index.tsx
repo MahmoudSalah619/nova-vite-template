@@ -1,7 +1,6 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import TextInput from "@/src/components/Atoms/TextInput";
-import RichTextEditor from "@/src/components/Molecules/RichTextEditor";
 import CardWrapper from "@/src/components/Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
 import ValidationSchema, { MerchantInfo } from "@/constants/Validation";
@@ -20,7 +19,6 @@ export default function MerchantGeneralInfo() {
     handleSubmit,
     formState: { errors },
   } = useForm<MerchantInfo>();
-  const { setValue } = useForm<MerchantInfo>();
 
   const password = watch("confirmPassword");
 
@@ -113,12 +111,6 @@ export default function MerchantGeneralInfo() {
             }}
             status={errors.phoneNumber ? "error" : "default"}
             errorMsg={errors.phoneNumber?.message}
-          />
-
-          <RichTextEditor
-            label="Merchant Bio"
-            containerStyle={styles.inputContainer}
-            onChange={(value) => setValue("bio", value)}
           />
         </div>
         <button type="submit" className={styles.submitButton}>

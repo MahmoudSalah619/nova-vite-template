@@ -3,7 +3,6 @@ import CardWrapper from "@/src/components/Wrappers/CardWrapper";
 import styles from "./styles.module.scss";
 import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
 import TextInput from "@/src/components/Atoms/TextInput";
-import RichTextEditor from "@/src/components/Molecules/RichTextEditor";
 
 function EditCategoryGeneralInfoOrganism() {
   const { t } = useAutoCompleteTranslation();
@@ -19,11 +18,6 @@ function EditCategoryGeneralInfoOrganism() {
           label="category_name"
           labelStyle={styles.label}
           defaultValue={state}
-        />
-
-        <RichTextEditor
-          containerStyle={styles.inputContainer}
-          label={t("Category Description")}
         />
       </div>
     </CardWrapper>
