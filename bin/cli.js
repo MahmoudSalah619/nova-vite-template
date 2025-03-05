@@ -3,18 +3,41 @@ const { program } = require("commander");
 const fs = require("fs-extra");
 const path = require("path");
 const { spawnSync } = require("child_process");
-
+const inquirer = require("inquirer");
+const prompt = inquirer.createPromptModule();
 program
   .version(require("../package.json").version)
-  .arguments("<project-directory>")
+  .arguments("[project-directory]")
   .action(async (projectDir) => {
     try {
+      // Ask questions
+      const answers = await prompt([
+        {
+          type: "input",
+          name: "projectName",
+          message: "What's the name of the project?",
+          default: projectDir,
+        },
+        {
+          type: "confirm",
+          name: "eslint",
+          message: "Do you want ESLint?",
+          default: false,
+        },
+        {
+          type: "confirm",
+          name: "husky",
+          message: "Do you want Husky?",
+          default: false,
+        },
+      ]);
+
       // Create paths
       const templatePath = path.join(__dirname, "../template");
-      const targetPath = path.join(process.cwd(), projectDir);
-
+      const targetPath = path.join(process.cwd(), answers.projectName);
+      const answersObj = JSON.stringify(answers);
       // Create directory
-      console.log(`Creating ${projectDir}...`);
+      console.log(`Creating ${answers.projectName}...`);
       await fs.ensureDir(targetPath);
 
       // Copy template files
@@ -25,7 +48,9 @@ program
       const packageJsonPath = path.join(targetPath, "package.json");
       const packageJson = await fs.readFile(packageJsonPath, "utf-8");
       const rendered = require("ejs").render(packageJson, {
-        projectName: projectDir,
+        projectName: answers.projectName,
+        eslint: answers.eslint,
+        husky: answers.husky,
       });
       await fs.writeFile(packageJsonPath, rendered);
 
@@ -38,9 +63,27 @@ program
         shell: true,
       });
 
-      console.log(`\n✅ Success! Created ${projectDir} at ${targetPath}`);
+      // Install ESLint and Husky if selected
+      if (answers.eslint) {
+        spawnSync(npmCmd, ["install", "eslint", "eslint-plugin-react-hooks", "eslint-plugin-react-refresh", "typescript-eslint"], {
+          cwd: targetPath,
+          stdio: "inherit",
+          shell: true,
+        });
+      }
+      if (answers.husky) {
+        spawnSync(npmCmd, ["install", "husky"], {
+          cwd: targetPath,
+          stdio: "inherit",
+          shell: true,
+        });
+      }
+
+      console.log(
+        `\n✅ Thank you for using nova! Your project is ready at ${targetPath}`
+      );
       console.log("\nNext steps:");
-      console.log(`cd ${projectDir}`);
+      console.log(`cd ${answers.projectName}`);
       console.log("npm run dev");
     } catch (error) {
       console.error("Error creating project:", error);
