@@ -29,6 +29,8 @@ This is a dashboard template built with React and Vite. It provides a modern and
 - **Atomic Design System**: A methodology for creating design systems.
 - **Reusable Components**: Modular and reusable components for easy customization.
 - **State Management**: Integrated state management using React hooks or context.
+- **Husky** (optional): Git hooks made easy.
+- **ESLint** (optional): A tool for identifying and fixing problems in JavaScript code.
 
 ## Installation
 
