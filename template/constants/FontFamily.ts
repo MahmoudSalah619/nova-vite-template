@@ -1,6 +1,6 @@
 const FontFamily = {
   font700: "GothamBold",
-  font600: "SFProTextSemibold",
+  font600: "GothamBold",
   font500: "GothamMedium",
   font400: "GothamLight",
   font400Nenu: "NeueMachinaLight",
