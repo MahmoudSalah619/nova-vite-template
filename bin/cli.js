@@ -35,7 +35,6 @@ program
       // Create paths
       const templatePath = path.join(__dirname, "../template");
       const targetPath = path.join(process.cwd(), answers.projectName);
-      const answersObj = JSON.stringify(answers);
       // Create directory
       console.log(`Creating ${answers.projectName}...`);
       await fs.ensureDir(targetPath);
@@ -65,14 +64,29 @@ program
 
       // Install ESLint and Husky if selected
       if (answers.eslint) {
-        spawnSync(npmCmd, ["install", "eslint", "eslint-plugin-react-hooks", "eslint-plugin-react-refresh", "typescript-eslint"], {
-          cwd: targetPath,
-          stdio: "inherit",
-          shell: true,
-        });
+        spawnSync(
+          npmCmd,
+          [
+            "install",
+            "--save-dev",
+            "eslint",
+            "eslint-config-airbnb",
+            "eslint-config-prettier",
+            "eslint-plugin-import",
+            "eslint-plugin-jsx-a11y",
+            "eslint-plugin-prettier",
+            "eslint-plugin-react",
+            "eslint-plugin-react-hooks",
+          ],
+          {
+            cwd: targetPath,
+            stdio: "inherit",
+            shell: true,
+          }
+        );
       }
       if (answers.husky) {
-        spawnSync(npmCmd, ["install", "husky"], {
+        spawnSync(npmCmd, ["install", "--save-dev", "husky"], {
           cwd: targetPath,
           stdio: "inherit",
           shell: true,
