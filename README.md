@@ -89,10 +89,6 @@ Here are some screenshots of the application:
 
 ![Tables](screenshots/tables.png)
 
-### Tables
-
-![Tables](screenshots/tables2.png)
-
 ### Filters
 
 ![Filters](screenshots/filters.png)
