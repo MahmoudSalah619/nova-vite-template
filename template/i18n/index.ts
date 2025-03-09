@@ -2,7 +2,7 @@ import DefaultI18n, { LanguageDetectorAsyncModule } from "i18next";
 import { initReactI18next } from "react-i18next";
 // import "moment/locale/ar";
 
-import { TranslationKeyEnum } from "@/types/TranslationKeyEnum";
+import { TranslationKeyEnum } from "types/TranslationKeyEnum";
 // import moment from "moment";
 import en from "./en.json";
 import ar from "./ar.json";

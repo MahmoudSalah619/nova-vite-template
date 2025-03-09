@@ -47,7 +47,7 @@ function OrdersBarChart({ data }: { data?: [] }) {
             vertical={false}
           />
           <XAxis dataKey="month" axisLine={false} tickLine={false} />
-          <Bar dataKey="orders" fill={COLORS.primaryFF} radius={6} />
+          <Bar dataKey="orders" fill={COLORS.primary} radius={6} />
         </BarChart>
       </ResponsiveContainer>
     </div>

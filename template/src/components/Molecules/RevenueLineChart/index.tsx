@@ -45,9 +45,9 @@ function RevenueLineChart({ data }: { data?: [] }) {
           <Area
             type="monotone"
             dataKey="orders"
-            stroke={COLORS.primaryFF}
+            stroke={COLORS.primary}
             strokeWidth={2}
-            fill={COLORS.primaryFF}
+            fill={COLORS.primary}
             fillOpacity={0.09}
           />
         </AreaChart>

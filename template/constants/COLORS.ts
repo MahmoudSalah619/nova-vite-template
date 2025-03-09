@@ -1,14 +1,15 @@
 const COLORS = {
   // Primary Colors
 
-  primary: "#FF8B66",
-  primaryFF: "#FF7E55",
-  lightPrimary: "#E9F1F6",
+  primary: "#0089B4",
+  primary0E: "#0E3E52",
+  primaryE3: "#E3F6F8",
+  lightPrimary: "#E3F6F8",
   secondary: "#7F7F7F",
   accentYellow: "#FEC214",
   grey: "#DEDDE0",
-  orange500: "#FF7E55",
-
+  orange500: "#0089B4",
+  background: "#E3F6F8",
   // Neutral Colors
   // ---grey---
   gray700: "#344054",
@@ -34,7 +35,7 @@ const COLORS = {
   secondaryText: "#6C7278",
   transparent: "transparent",
   // system message colors
-  success: "#159F91",
+  success: "#08875D",
   success700: "#067647",
   success200: "#ABEFC6",
   success50: "#ECFDF3",

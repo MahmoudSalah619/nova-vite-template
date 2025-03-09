@@ -18,7 +18,7 @@ export default function ForgetPasswordOrganism() {
   const onSubmit: SubmitHandler<Auth> = (data) => {
     console.log("Form Submitted:", data);
 
-    navigate("/otp", {
+    navigate("/ChangePassword", {
       state: {
         forgetPassword: true,
       },
@@ -26,10 +26,22 @@ export default function ForgetPasswordOrganism() {
   };
   return (
     <div className={styles.container}>
-      <Text
-        className={styles.introText}
-        i18nKey="To reset your password, please enter the email address of your ardi account"
-      />
+      <div className={styles.formHeader}>
+        <Text
+          i18nKey="forget_password_title"
+          fontSize={20}
+          color="primary0E"
+          className={styles.introTitle}
+        />
+
+        <Text
+          i18nKey="forget_password_subtitle"
+          fontSize={14}
+          color="grey500"
+          fontFamily="font400"
+          className={styles.introSubTitle}
+        />
+      </div>
 
       <form className={styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
         <TextInput
@@ -44,23 +56,8 @@ export default function ForgetPasswordOrganism() {
         />
 
         {/* Buttton */}
-
         <div className={styles.btnContainer}>
-          <Button
-            type="submit"
-            title="Reset Password"
-            isFullWidth
-            variant="dark"
-          />
-        </div>
-
-        <div className={styles.btnContainer}>
-          <Button
-            onClick={() => navigate("/login")}
-            title="Go Back"
-            isFullWidth
-            variant="transparent-grey"
-          />
+          <Button type="submit" title="Reset Password" isFullWidth />
         </div>
       </form>
     </div>

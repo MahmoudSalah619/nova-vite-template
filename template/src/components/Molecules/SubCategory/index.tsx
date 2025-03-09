@@ -24,7 +24,7 @@ function SubCategory({ Category, onClick, editPath }: CategoriesList) {
           fontSize={14}
           fontFamily="font500"
           variant="transparet"
-          fontColor="primaryFF"
+          fontColor="primary"
           title="Edit"
           onClick={() => navigate(editPath.path, editPath.param)}
         />

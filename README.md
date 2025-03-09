@@ -73,10 +73,13 @@ npm run preview
 
 Here are some screenshots of the application:
 
-![Dashboard/Graphs](screenshots/dashboard.png)
-![Tables](screenshots/table.png)
-![Forms](screenshots/form.png)
-![Forms](screenshots/form2.png)
+![Auth/Login](screenshots/login.png)
+![Auth/Signup](screenshots/signup.png)
+![Dashboard/Graphs](screenshots/home.png)
+![Tables](screenshots/tables.png)
+![Tables](screenshots/table2.png)
+![Forms](screenshots/forms.png)
+![Filters](screenshots/filters.png)
 
 ## 📋 Changelog
 

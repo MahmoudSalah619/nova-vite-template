@@ -2,6 +2,7 @@ import { RcFile } from "antd/es/upload";
 
 export interface Auth {
   emailOrPhone: string;
+  email: string;
   userName: string;
   password: string;
   otp: string;
@@ -16,6 +17,9 @@ export interface Auth {
   commercialRegister: RcFile | undefined;
   taxId: RcFile | undefined;
   homeAddress: string;
+  jobTitle: string;
+  fullName: string;
+  companyName: string;
 }
 export interface MerchantInfo {
   name: string;
@@ -149,6 +153,39 @@ const ValidationSchema = {
 
   userName: {
     required: "user name is required",
+    minLength: {
+      value: 4,
+      message: "user name must be at least 2 characters long",
+    },
+    maxLength: {
+      value: 15,
+      message: "Brand name cannot exceed 15 characters",
+    },
+  },
+  fullName: {
+    required: "full name is required",
+    minLength: {
+      value: 4,
+      message: "user name must be at least 2 characters long",
+    },
+    maxLength: {
+      value: 15,
+      message: "Brand name cannot exceed 15 characters",
+    },
+  },
+  jobTitle: {
+    required: "job title is required",
+    minLength: {
+      value: 4,
+      message: "user name must be at least 2 characters long",
+    },
+    maxLength: {
+      value: 15,
+      message: "Brand name cannot exceed 15 characters",
+    },
+  },
+  companyName: {
+    required: "company name is required",
     minLength: {
       value: 4,
       message: "user name must be at least 2 characters long",

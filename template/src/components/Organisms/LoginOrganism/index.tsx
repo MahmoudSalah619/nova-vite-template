@@ -10,6 +10,7 @@ import styles from "./styles.module.scss";
 // import { login } from "@/reducers/authReducer";
 import loginHandler from "@/utils/loginHandler";
 import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import eye from "@/src/assets/icons/auth/eye.svg";
 import { User } from "@/src/apis/types/auth";
 
 export default function LoginOrganism() {
@@ -26,8 +27,7 @@ export default function LoginOrganism() {
 
   const onSubmit: SubmitHandler<Auth> = (data) => {
     console.log("Form Submitted:", data);
-    const user_type =
-      data.emailOrPhone === "admin@gmail.com" ? "admin" : "seller";
+    const user_type = data.email === "admin@gmail.com" ? "admin" : "seller";
     const dummy_data = {
       user_type,
     };
@@ -40,17 +40,32 @@ export default function LoginOrganism() {
   };
   return (
     <div className={styles.container}>
-      <Text className={styles.introText} i18nKey="welcome_message" />
+      <div className={styles.formHeader}>
+        <Text
+          i18nKey="login_title"
+          fontSize={20}
+          color="primary0E"
+          className={styles.introTitle}
+        />
+
+        <Text
+          i18nKey="login_subtitle"
+          fontSize={14}
+          color="grey500"
+          fontFamily="font400"
+          className={styles.introSubTitle}
+        />
+      </div>
 
       <form className={styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
         <TextInput
           containerStyle={styles.input}
-          label="email_or_phone_label"
-          status={errors.emailOrPhone?.message ? "error" : "default"}
+          label="email_address"
+          status={errors.email?.message ? "error" : "default"}
           reactHookFormProps={{
-            ...register("emailOrPhone", ValidationSchema.emailOrPhone),
+            ...register("emailOrPhone", ValidationSchema.email),
           }}
-          errorMsg={errors.emailOrPhone?.message}
+          errorMsg={errors.email?.message}
         />
         <TextInput
           containerStyle={`${styles.input} ${styles.passwordContainer}`}
@@ -64,6 +79,8 @@ export default function LoginOrganism() {
             ...register("password", ValidationSchema.passwordLogin),
           }}
           errorMsg={errors.password?.message}
+          suffixIcon={eye}
+
         />
         <div className={styles.rowContainer}>
           <Checkbox className={styles.checkboxStyle} onChange={onChange}>
@@ -80,18 +97,6 @@ export default function LoginOrganism() {
 
         <div className={styles.btnContainer}>
           <Button title="Login" isFullWidth type="submit" />
-        </div>
-
-        <div className={styles.signUpContainer}>
-          <Text className={styles.signUpText}>
-            {t("sign_up_prompt")}
-            <HyperLink
-              to="/sign-up"
-              title={t("sign_up_link")}
-              fontSize={14}
-              className={styles.space}
-            />
-          </Text>
         </div>
       </form>
     </div>

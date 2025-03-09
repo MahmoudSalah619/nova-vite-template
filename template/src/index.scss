@@ -171,6 +171,12 @@ button {
   flex-direction: column;
 }
 
+/* Center alignment for Y axis */
+.flex-align-center {
+  display: flex;
+  align-items: var(--align-center);
+}
+
 /* Center alignment for both axis */
 .flex-center {
   display: flex;

@@ -1,80 +1,26 @@
 @use "/styles/all" as *;
 
 .container {
-  .introText {
-    margin-block: 32px;
+  padding-bottom: 46px;
 
-    font-size: 14px;
-    font-weight: 500;
+  .introTitle {
+    font-weight: 700;
     line-height: 20px;
     color: $grey700;
-    text-align: center;
   }
+
   .formContainer {
-    width: 328px;
-
-    .emailInput {
-      border: 1px solid $grey200;
-    }
-
     .passwordContainer {
       margin-top: 16px;
       margin-bottom: 12px;
     }
+
     .spaceTop {
       margin-top: 16px;
     }
 
-    .rowContainer {
-      display: flex;
-      align-items: center;
-      margin-top: 32px;
-    }
-
-    .checkboxStyle {
-      font-size: 16px;
-      font-weight: 500;
-      color: $black;
-      :global(.ant-checkbox-checked .ant-checkbox-inner) {
-        background-color: $primary !important;
-        border-color: $primary !important;
-      }
-
-      :global(.ant-checkbox-checked)::after {
-        border-color: $light !important;
-      }
-
-      &:hover {
-        :global(.ant-checkbox-checked .ant-checkbox-inner) {
-          background-color: $primary !important;
-          border-color: $primary !important;
-        }
-      }
-    }
-
-    .signUpContainer {
-      margin-top: 32px;
-      padding-bottom: 80px;
-      .signUpText {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        color: $grey600;
-        text-align: center;
-
-        .space {
-          margin-inline-start: 4px;
-        }
-      }
-    }
     .btnContainer {
       margin-top: 32px;
-    }
-    .validationContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-top: 12px;
     }
   }
 }

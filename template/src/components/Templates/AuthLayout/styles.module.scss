@@ -2,17 +2,38 @@
 
 .container {
   display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.layoutSidePanel {
+  flex-basis: 54vw;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  align-self: center;
-
-  width: 560px;
-  margin: auto;
+  background-color: $primary;
+  gap: 100px;
+  padding-top: 74px;
+  padding-inline-start: 67px;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
 }
 
-.medium {
-  margin-top: 80px;
+.layoutContent {
+  padding-top: 74px;
+  padding-inline-start: 43px;
+  padding-inline-end: 68px;
+  overflow-y: auto;
 }
-.large {
-  margin-top: 160px;
+
+.layoutText {
+  font-weight: 700;
+}
+
+.formTitle {
+  font-weight: 700;
+  margin-bottom: 89px;
+  line-height: 45px;
 }

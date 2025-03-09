@@ -1,11 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import { SubmitHandler, useForm } from "react-hook-form";
-import Text from "@/src/components/Atoms/Text";
-import styles from "./styles.module.scss";
-import TextInput from "@/src/components/Atoms/TextInput";
-import Button from "@/src/components/Atoms/Button";
-import PasswordValidationRole from "@/src/components/Molecules/PasswordValidationRole";
 import ValidationSchema, { Auth } from "@/constants/Validation";
+import Button from "@/src/components/Atoms/Button";
+import Text from "@/src/components/Atoms/Text";
+import TextInput from "@/src/components/Atoms/TextInput";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import styles from "./styles.module.scss";
+import loginHandler from "@/utils/loginHandler";
+import { User } from "@/src/apis/types/auth";
 
 export default function ChangPasswordOrganism() {
   const navigate = useNavigate();
@@ -17,34 +18,43 @@ export default function ChangPasswordOrganism() {
     formState: { errors },
   } = useForm<Auth>();
 
-  const password = watch("newPassword");
-
-  const hasUppercase = (value: string) => {
-    return /[A-Z]/.test(value);
-  };
-
-  const hasEightLetters = (value: string) => {
-    return value?.length >= 8;
-  };
-
-  const hasNumber = (value: string) => {
-    return /\d/.test(value);
-  };
-
   // Handle Form Submission
   const onSubmit: SubmitHandler<Auth> = (data) => {
     console.log("Password Changed Successfully:", data);
-    navigate("/success-changed-password"); // Redirect to a success page or another route
+    const user_type = data.email === "admin@gmail.com" ? "admin" : "seller";
+    const dummy_data = {
+      user_type,
+    };
+    loginHandler({
+      token: "skshdj36su3h77",
+      data: dummy_data as User,
+    });
+    navigate("/");
   };
 
   return (
     <div className={styles.container}>
-      <Text className={styles.introText} i18nKey="Reset Your Password" />
+      <div className={styles.formHeader}>
+        <Text
+          i18nKey="forget_password_title"
+          fontSize={20}
+          color="primary0E"
+          className={styles.introTitle}
+        />
+
+        <Text
+          i18nKey="forget_password_subtitle"
+          fontSize={14}
+          color="grey500"
+          fontFamily="font400"
+          className={styles.introSubTitle}
+        />
+      </div>
 
       <form className={styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
         <TextInput
-          containerStyle={styles.input}
-          label="New Password"
+          containerStyle={`${styles.input} ${styles.spaceTop}`}
+          label="Enter_New_Password"
           type="password"
           labelStyle={styles.labelStyle}
           inputStyle={styles.emailInput}
@@ -55,24 +65,9 @@ export default function ChangPasswordOrganism() {
           errorMsg={errors.newPassword?.message}
         />
 
-        <div className={styles.validationContainer}>
-          <PasswordValidationRole
-            title="Minimum 8 characters"
-            isValid={hasEightLetters(password)}
-          />
-          <PasswordValidationRole
-            title="At least 1 Number"
-            isValid={hasNumber(password)}
-          />
-          <PasswordValidationRole
-            title="At least 1 uppercase letter"
-            isValid={hasUppercase(password)}
-          />
-        </div>
-
         <TextInput
-          containerStyle={styles.input}
-          label="Confirm New Password"
+          containerStyle={`${styles.input} ${styles.spaceTop}`}
+          label="Confirm_Password"
           type="password"
           labelStyle={styles.labelStyle}
           inputStyle={styles.emailInput}
@@ -87,15 +82,8 @@ export default function ChangPasswordOrganism() {
         />
 
         {/* Buttton */}
-
         <div className={styles.btnContainer}>
-          <Button type="submit" title="Confirm" isFullWidth />
-          <Button
-            onClick={() => navigate(-1)}
-            title="Go Back"
-            isFullWidth
-            variant="transparent-grey"
-          />
+          <Button type="submit" title="update_password" isFullWidth />
         </div>
       </form>
     </div>

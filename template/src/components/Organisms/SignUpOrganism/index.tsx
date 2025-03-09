@@ -1,76 +1,71 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { Checkbox, CheckboxProps } from "antd";
-import { SubmitHandler, useForm } from "react-hook-form";
-import Text from "@/src/components/Atoms/Text";
-import styles from "./styles.module.scss";
-import TextInput from "@/src/components/Atoms/TextInput";
-import Button from "@/src/components/Atoms/Button";
-import HyperLink from "@/src/components/Atoms/HyperLink";
-import PasswordValidationRole from "@/src/components/Molecules/PasswordValidationRole";
 import ValidationSchema, { Auth } from "@/constants/Validation";
-import useAutoCompleteTranslation from "@/hooks/useAutoCompleteTranslation";
+import Button from "@/src/components/Atoms/Button";
+import Text from "@/src/components/Atoms/Text";
+import TextInput from "@/src/components/Atoms/TextInput";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import styles from "./styles.module.scss";
+import eye from "@/src/assets/icons/auth/eye.svg";
+import loginHandler from "@/utils/loginHandler";
+import { User } from "@/src/apis/types/auth";
 
 export default function SignUpOrganism() {
-  const { t } = useAutoCompleteTranslation();
-  const [isChecked, setIsChecked] = useState(false); // Manage checkbox state
-
-  const onCheckboxChange: CheckboxProps["onChange"] = (e) => {
-    setIsChecked(e.target.checked); // Update the state when checkbox changes
-  };
   const navigate = useNavigate();
 
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<Auth>();
 
-  const password = watch("newPassword");
-
-  const hasUppercase = (value: string) => {
-    return /[A-Z]/.test(value);
-  };
-
-  const hasEightLetters = (value: string) => {
-    return value?.length >= 8;
-  };
-
-  const hasNumber = (value: string) => {
-    return /\d/.test(value);
-  };
-
   const onSubmit: SubmitHandler<Auth> = (data) => {
     console.log("Password Changed Successfully:", data);
-    navigate("/otp", {
-      state: {
-        forgetPassword: false,
-      },
-    }); // Redirect to a success page or another route
+    
+    const user_type = data.email === "admin@gmail.com" ? "admin" : "seller";
+    const dummy_data = {
+      user_type,
+    };
+    loginHandler({
+      token: "skshdj36su3h77",
+      data: dummy_data as User,
+    });
+    navigate("/");
   };
 
   return (
     <div className={styles.container}>
-      <Text className={styles.introText} i18nKey="create_account_heading" />
+      <Text
+        i18nKey="Complete_user_register"
+        fontSize={20}
+        color="primary0E"
+        className={styles.introTitle}
+      />
 
       <form className={styles.formContainer} onSubmit={handleSubmit(onSubmit)}>
         <TextInput
           containerStyle={`${styles.input} ${styles.spaceTop}`}
-          label="brand_name_label"
+          label="Full_Name"
           labelStyle={styles.labelStyle}
-          inputStyle={styles.emailInput}
-          status={errors.brandName ? "error" : "default"}
+          status={errors.fullName ? "error" : "default"}
           reactHookFormProps={{
-            ...register("brandName", ValidationSchema.brandName),
+            ...register("fullName", ValidationSchema.fullName),
           }}
-          errorMsg={errors.brandName?.message}
+          errorMsg={errors.fullName?.message}
+        />
+        <TextInput
+          containerStyle={`${styles.input} ${styles.spaceTop}`}
+          label="jobTitle"
+          labelStyle={styles.labelStyle}
+          status={errors.jobTitle ? "error" : "default"}
+          reactHookFormProps={{
+            ...register("jobTitle", ValidationSchema.jobTitle),
+          }}
+          errorMsg={errors.jobTitle?.message}
         />
         <TextInput
           containerStyle={`${styles.input} ${styles.spaceTop}`}
           label="Email Address"
           labelStyle={styles.labelStyle}
-          inputStyle={styles.emailInput}
           status={errors.emailOrPhone?.message ? "error" : "default"}
           reactHookFormProps={{
             ...register("emailOrPhone", ValidationSchema.email),
@@ -81,13 +76,23 @@ export default function SignUpOrganism() {
           containerStyle={`${styles.input} ${styles.spaceTop}`}
           label="phone_number_label"
           labelStyle={styles.labelStyle}
-          inputStyle={styles.emailInput}
           status={errors.phoneNumber ? "error" : "default"}
           reactHookFormProps={{
             ...register("phoneNumber", ValidationSchema.phoneNumber),
           }}
           errorMsg={errors.phoneNumber?.message}
         />
+        <TextInput
+          containerStyle={`${styles.input} ${styles.spaceTop}`}
+          label="company"
+          labelStyle={styles.labelStyle}
+          status={errors.companyName ? "error" : "default"}
+          reactHookFormProps={{
+            ...register("companyName", ValidationSchema.companyName),
+          }}
+          errorMsg={errors.companyName?.message}
+        />
+
         <TextInput
           containerStyle={`${styles.input} ${styles.passwordContainer}`}
           label="Password"
@@ -100,57 +105,27 @@ export default function SignUpOrganism() {
             ...register("newPassword", ValidationSchema.NewPassword),
           }}
           errorMsg={errors.newPassword?.message}
+          suffixIcon={eye}
         />
-        <div className={styles.validationContainer}>
-          <Text
-            fontSize={12}
-            fontFamily="font500"
-            color="grey900"
-            i18nKey="password_requirements_heading"
-          />
-          <PasswordValidationRole
-            title="Minimum 8 characters"
-            isValid={hasEightLetters(password)}
-          />
-          <PasswordValidationRole
-            title="At least 1 Number"
-            isValid={hasNumber(password)}
-          />
-          <PasswordValidationRole
-            title="At least 1 uppercase letter"
-            isValid={hasUppercase(password)}
-          />
-        </div>
-        <div className={styles.rowContainer}>
-          <Checkbox
-            className={styles.checkboxStyle}
-            onChange={onCheckboxChange} // Handle checkbox change manually
-          >
-            {t("agree_terms")}{" "}
-            <HyperLink to="/" title={t("terms_and_conditions")} fontSize={16} />
-          </Checkbox>
-        </div>
+
+        <TextInput
+          containerStyle={`${styles.input} ${styles.passwordContainer}`}
+          label="Re_password"
+          isPasswordInput
+          type="password"
+          labelStyle={styles.labelStyle}
+          inputStyle={styles.test}
+          status={errors.newPassword ? "error" : "default"}
+          reactHookFormProps={{
+            ...register("newPassword", ValidationSchema.NewPassword),
+          }}
+          errorMsg={errors.newPassword?.message}
+          suffixIcon={eye}
+        />
         {/* Buttton */}
 
         <div className={styles.btnContainer}>
-          <Button
-            disabled={!isChecked}
-            title="sign_up_button"
-            isFullWidth
-            type="submit"
-          />
-        </div>
-
-        <div className={styles.signUpContainer}>
-          <Text className={styles.signUpText}>
-            {t("already_have_account")}
-            <HyperLink
-              to="/login"
-              title={t("sign_in_link")}
-              fontSize={14}
-              className={styles.space}
-            />
-          </Text>
+          <Button title="sign_up_button" isFullWidth type="submit" />
         </div>
       </form>
     </div>

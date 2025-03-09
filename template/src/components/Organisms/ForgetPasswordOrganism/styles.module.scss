@@ -1,26 +1,24 @@
 @use "/styles/all" as *;
 
 .container {
-  width: 59%;
-  .introText {
-    width: 78%;
-    margin-block: 32px;
-    margin-inline: auto;
+  .formHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
 
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    color: $grey700;
-    text-align: center;
-  }
-  .formContainer {
-    width: 329px;
-    margin: auto;
-
-    .emailInput {
-      border: 1px solid $grey200;
+    .introTitle {
+      font-weight: 700;
+      line-height: 20px;
+      color: $grey700;
     }
 
+    .introSubTitle {
+      line-height: 20px;
+    }
+  }
+
+  .formContainer {
     .btnContainer {
       margin-top: 16px;
     }

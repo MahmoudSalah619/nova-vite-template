@@ -14,6 +14,9 @@ import AddPromo from "@/src/components/Pages/promo/addPromo";
 import Faqs from "@/src/components/Pages/Faqs";
 import BrandProfile from "@/src/components/Pages/BrandProfile";
 import ContactUS from "@/src/components/Pages/contactUs";
+import SignUpOrganism from "@/src/components/Organisms/SignUpOrganism";
+import ForgetPassword from "@/src/components/Pages/Auth/ForgetPassword";
+import ChangePassword from "@/src/components/Pages/Auth/ChangePassword";
 
 export default {
   // Auth screens
@@ -21,8 +24,44 @@ export default {
     {
       path: "/login",
       element: (
-        <AuthLayout>
+        <AuthLayout
+          layoutText="Welcome_Back"
+          formTitle="facility_management_system"
+        >
           <Login />
+        </AuthLayout>
+      ),
+    },
+    {
+      path: "/sign-up",
+      element: (
+        <AuthLayout
+          layoutText="Signup_your_Account"
+          formTitle="facility_management_system"
+        >
+          <SignUpOrganism />
+        </AuthLayout>
+      ),
+    },
+    {
+      path: "/forget-password",
+      element: (
+        <AuthLayout
+          layoutText="Welcome_Back"
+          formTitle="facility_management_system"
+        >
+          <ForgetPassword />
+        </AuthLayout>
+      ),
+    },
+    {
+      path: "/ChangePassword",
+      element: (
+        <AuthLayout
+          layoutText="Welcome_Back"
+          formTitle="facility_management_system"
+        >
+          <ChangePassword />
         </AuthLayout>
       ),
     },

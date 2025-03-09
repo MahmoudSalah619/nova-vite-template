@@ -45,7 +45,7 @@ function BrandProfileInfoOrganism() {
               <Text
                 fontSize={12}
                 fontFamily="font500"
-                color="primaryFF"
+                color="primary"
                 i18nKey="Edit Photo"
               />
             </Dragger>

@@ -37,12 +37,13 @@ export default function useAuth() {
   useEffect(() => {
     if (typeof token !== "string") return;
 
-    if (!token) {
-      navigate("/login", { replace: true, state: { from: location } });
-    } else if (token && location.pathname === "/login") {
-      navigate("/", { replace: true });
-    } else if (location.state?.from) {
-      navigate(location.state.from);
-    }
+    // ! Uncomment this code if you want to redirect user to login page if token is not found
+    // if (!token) {
+    //   navigate("/login", { replace: true, state: { from: location } });
+    // } else if (token && location.pathname === "/login") {
+    //   navigate("/", { replace: true });
+    // } else if (location.state?.from) {
+    //   navigate(location.state.from);
+    // }
   }, [token]);
 }
