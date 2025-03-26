@@ -11,3 +11,4 @@ All notable changes to this project will be documented in this file.
 
 ## [Upcoming]
 
+- Spliting dashboard to Blank & Filled
