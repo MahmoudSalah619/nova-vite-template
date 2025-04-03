@@ -18,4 +18,5 @@ export interface TextInputAtomProps {
   errorMsg?: string;
   reactHookFormProps?: UseFormRegisterReturn;
   prefixIcon?: string;
+  suffixIcon?: string;
 }

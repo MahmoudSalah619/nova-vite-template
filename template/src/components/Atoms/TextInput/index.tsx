@@ -19,6 +19,7 @@ export default function TextInput({
   errorMsg,
   reactHookFormProps,
   prefixIcon,
+  suffixIcon,
   defaultValue,
 }: TextInputAtomProps) {
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -85,6 +86,15 @@ export default function TextInput({
               onChange={onChange}
               defaultValue={defaultValue}
               {...reactHookFormProps}
+            />
+          )}
+           {suffixIcon && (
+            <Image
+              alt="prefixIcon"
+              src={suffixIcon}
+              width={26.52}
+              height={26.52}
+              className={styles.suffixIcon}
             />
           )}
         </div>

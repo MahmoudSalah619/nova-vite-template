@@ -24,10 +24,7 @@ export default {
     {
       path: "/login",
       element: (
-        <AuthLayout
-          layoutText="Welcome_Back"
-          formTitle="facility_management_system"
-        >
+        <AuthLayout layoutText="Welcome_Back" formTitle="auth_header_title">
           <Login />
         </AuthLayout>
       ),
@@ -37,7 +34,7 @@ export default {
       element: (
         <AuthLayout
           layoutText="Signup_your_Account"
-          formTitle="facility_management_system"
+          formTitle="auth_header_title"
         >
           <SignUpOrganism />
         </AuthLayout>
@@ -46,10 +43,7 @@ export default {
     {
       path: "/forget-password",
       element: (
-        <AuthLayout
-          layoutText="Welcome_Back"
-          formTitle="facility_management_system"
-        >
+        <AuthLayout layoutText="Welcome_Back" formTitle="auth_header_title">
           <ForgetPassword />
         </AuthLayout>
       ),
@@ -57,10 +51,7 @@ export default {
     {
       path: "/ChangePassword",
       element: (
-        <AuthLayout
-          layoutText="Welcome_Back"
-          formTitle="facility_management_system"
-        >
+        <AuthLayout layoutText="Welcome_Back" formTitle="auth_header_title">
           <ChangePassword />
         </AuthLayout>
       ),
