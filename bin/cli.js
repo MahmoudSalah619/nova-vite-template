@@ -22,13 +22,14 @@ program
           type: "confirm",
           name: "eslint",
           message: "Do you want ESLint?",
-          default: false,
+          default: true,
         },
         {
           type: "confirm",
           name: "husky",
           message: "Do you want Husky?",
-          default: false,
+          default: true,
+          when: (answers) => answers.eslint,
         },
       ]);
 
@@ -70,15 +71,12 @@ program
             "install",
             "--save-dev",
             "eslint",
-            "eslint-config-airbnb",
+            "eslint-config-airbnb", // Auto-installs react-hooks + other plugins
             "eslint-config-prettier",
-            "eslint-plugin-import",
-            "eslint-plugin-jsx-a11y",
             "eslint-plugin-prettier",
-            "eslint-plugin-react",
-            "eslint-plugin-react-hooks",
             "eslint-plugin-react-refresh",
-            "typescript-eslint",
+            "@typescript-eslint/eslint-plugin",
+            "@typescript-eslint/parser",
           ],
           {
             cwd: targetPath,

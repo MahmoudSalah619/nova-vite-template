@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 ## [Upcoming]
 
 - Spliting dashboard to Blank & Filled
+- Extra eslint cofiguration
+
+
+
+## [1.4.15] - 2025-04-06
+
+### Added
+
+- Fixing NPM install issues for Eslint
+
 
 ## [Added]
 
