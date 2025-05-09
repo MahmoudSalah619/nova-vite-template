@@ -8,7 +8,10 @@ type FilterFunc<OptionType> = (
 export interface SelectionInputAtomProps {
   containerStyle?: string;
   size?: "small" | "large";
-  onChange?: (value: string, option: optionType | optionType[]) => void;
+  onChange?: (
+    value: string,
+    option: optionType | optionType[] | undefined
+  ) => void;
   value?: string | null;
   options: optionType[];
   placeholder?: string;

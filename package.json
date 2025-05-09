@@ -33,7 +33,7 @@
     "url": "git+https://github.com/MahmoudSalah619/nova-vite-template"
   },
   "license": "MIT",
-  "version": "1.4.15",
+  "version": "1.4.16",
   "scripts": {
     "start": "vite  --port 3000",
     "start_staging": "vite --port 9130",

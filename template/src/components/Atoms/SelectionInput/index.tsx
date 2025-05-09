@@ -7,7 +7,7 @@ import Text from "../Text";
 
 export default function SelectionInput({
   containerStyle,
-  onChange,
+  onChange = () => {},
   options,
   value,
   placeholder = "",
@@ -70,7 +70,7 @@ export default function SelectionInput({
             onInputKeyDown={onInputKeyDown}
             defaultActiveFirstOption={!showSearch}
             suffixIcon={
-              <Image alt="Arrow Down" src={ARROW_DOWN} width={24} height={24} />
+              <Image alt="Arrow Down" src={ARROW_DOWN} width={20} height={20} />
             }
           />
         </div>

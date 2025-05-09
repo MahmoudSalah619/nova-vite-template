@@ -23,7 +23,7 @@ function CustomPagination({
       return (
         <a className={styles.btnPrev}>
           <Image
-            src={i18n.dir() === "ltr" ? ArrowRight : ArrowLeft}
+            src={i18n.dir() === "ltr" ? ArrowLeft : ArrowRight}
             alt="arrow left"
             width={20}
             height={20}
@@ -47,7 +47,7 @@ function CustomPagination({
             i18nKey="Next"
           />
           <Image
-            src={i18n.dir() === "ltr" ? ArrowLeft : ArrowRight}
+            src={i18n.dir() === "ltr" ? ArrowRight : ArrowLeft}
             alt="arrow right"
             width={20}
             height={20}

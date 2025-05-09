@@ -9,11 +9,21 @@ All notable changes to this project will be documented in this file.
 
 
 
+## [1.4.16] - 2025-05-09
+
+### Added
+
+- Fixed arrows direction in tables.
+- Fixed type error in selectionInput.
+- Fixed height in DashboardLayout.
+- Adjusted spacings in selectionInput.
+
+
 ## [1.4.15] - 2025-04-06
 
 ### Added
 
-- Fixing NPM install issues for Eslint
+- Fixed NPM install issues for Eslint
 
 
 ## [Added]
